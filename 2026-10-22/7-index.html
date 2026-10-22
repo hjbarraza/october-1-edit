@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The October 22 Edit</title>
+<meta name="description" content="The October 22 Edit: 25 stories on work agents, AGI timelines, agent infrastructure, supply-chain security, lunar compute, robots and the business of AI."/>
+<style>html,body,#root{margin:0;min-height:100%}body{background:var(--ds-page)}*{box-sizing:border-box}.magazine{color:var(--ds-ink)}.dateline{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.09em;font-weight:600;border-top:6px solid var(--ds-ink);padding:16px 0 10px}.magazine>header{margin-bottom:16px}.index-bar{border-top:1px solid var(--ds-ink);border-bottom:1px solid var(--ds-ink);padding:8px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}.index-bar>span{font-size:12px;color:var(--ds-ink-2)}nav{display:flex;gap:8px;flex-wrap:wrap}.edition{scroll-margin-top:20px;padding-top:30px}.edition-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.06em;font-weight:600;padding-bottom:10px}.edition-kicker{color:var(--ds-teal);font-weight:600}.lead-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;margin:18px 0 24px}.lead-art{margin:0 0 20px}.lead-art img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}.lead-art figcaption{font-size:10px;color:var(--ds-ink-2);line-height:16px;padding-top:6px}.story-meta{display:flex;align-items:center;justify-content:space-between;gap:12px}.tag{color:var(--ds-teal);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}.story-no{font-size:11px;color:var(--ds-ink-2)}.story h3{font-size:22px;line-height:1.18;letter-spacing:-.025em;font-weight:600;margin:12px 0}.story-hero h3{font-size:31px;line-height:1.08}.dek{font-size:14px;line-height:23px;margin:12px 0 16px;color:var(--ds-ink-2)}.byline{font-size:10px;line-height:17px;color:var(--ds-ink-2);margin-top:14px}.lead-side{border-left:1px solid var(--ds-hairline);padding-left:24px;display:flex;flex-direction:column;gap:28px}.lead-side .story+.story{border-top:1px solid var(--ds-hairline);padding-top:24px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}.grid .story{border-top:2px solid var(--ds-ink);padding-top:16px}.grid .story h3{font-size:20px}.extra{margin-top:32px;border-top:6px solid var(--ds-ink)}.extra-grid{margin-top:20px}.story details{border-top:1px solid var(--ds-hairline);border-bottom:1px solid var(--ds-hairline)}.story summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600}.story summary::-webkit-details-marker{display:none}.story summary span{font-size:22px;font-weight:350}.story details[open] summary span{transform:rotate(45deg)}.reading{padding:0 0 16px}.reading p{font-size:15px;line-height:25px;margin:6px 0 20px}.source-label{font-size:10px;letter-spacing:.04em;color:var(--ds-ink-2);margin-bottom:8px}.source-links{display:flex;flex-wrap:wrap;gap:10px 20px;line-height:24px}.source-links a{font-size:13px;min-height:44px;display:inline-flex;align-items:center}.endnote{margin:40px 0 20px;padding:16px 0;border-top:2px solid var(--ds-ink);border-bottom:1px solid var(--ds-hairline);display:flex;justify-content:space-between;align-items:center;gap:12px}.endnote>span{font-size:10px;letter-spacing:.08em;font-weight:600}summary:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--ds-teal);outline-offset:4px}@media(max-width:767px){.index-bar{display:block}.index-bar>span{display:block;padding:6px 0}nav{margin-top:4px}.lead-layout{display:block}.lead-side{border-left:0;padding-left:0;border-top:2px solid var(--ds-ink);padding-top:20px;margin-top:28px;gap:24px}.grid{grid-template-columns:1fr;gap:24px}.story-hero h3{font-size:29px}.story h3,.grid .story h3{font-size:23px}.dateline{font-size:9px;letter-spacing:.035em}.edition{padding-top:24px}.endnote{display:block}.endnote>span{display:block;margin-bottom:8px}.lead-art img{aspect-ratio:3/2}.reading p{font-size:16px;line-height:26px}}@media(min-width:768px){.magazine>header h1{font-size:48px;line-height:1.1}.extra-grid .story:first-child{grid-column:span 2}.extra-grid .story:first-child h3{font-size:29px}}
+
+.reading .brief-lead{margin:6px 0 12px}.reading ul.brief{list-style:disc;margin:0 0 20px;padding-left:20px;font-size:15px;line-height:25px}.reading ul.brief li{margin:0 0 8px}@media(max-width:767px){.reading ul.brief{font-size:16px;line-height:26px}}
+
+
+.thumb{margin:14px 0 0}.thumb img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--ds-sand,#eee)}.thumb figcaption{font-size:10px;color:var(--ds-ink-2);line-height:16px;padding-top:6px}.thumb+h3{margin-top:12px}
+
+:root{color-scheme:light;--ds-page:#fff;--ds-ink:#251f21;--ds-ink-2:#585254;--ds-teal:#497f71;--ds-hairline:#eae9ea;--ds-panel:#f4efec;--ds-sand:#f4efec;--ds-image:#eef2f5}:root[data-theme=dark]{color-scheme:dark;--ds-page:#171819;--ds-ink:#f4efec;--ds-ink-2:#bdb8b6;--ds-teal:#91c9b6;--ds-hairline:#414345;--ds-panel:#252729;--ds-sand:#252729;--ds-image:#252729}body{font-family:Arial,Helvetica,sans-serif;line-height:1.6}.magazine{max-width:1040px;margin:0 auto;padding:36px}header h1{font-family:Georgia,serif;font-weight:400;font-size:48px;line-height:1.1;letter-spacing:-.025em;margin:16px 0}header p{color:var(--ds-ink-2);margin:0 0 22px}h2{font-family:Georgia,serif;font-weight:400;font-size:26px;margin:10px 0 0}.caption,footer{font-size:12px;color:var(--ds-ink-2)}a{color:inherit;text-underline-offset:3px}nav a,.endnote a{font-size:12px;min-height:44px;display:inline-flex;align-items:center;padding:0 8px}.listen{background:var(--ds-panel);border-radius:8px;padding:16px;margin:18px 0 24px}.listen label{display:block;font-size:13px;font-weight:600;margin-bottom:8px}audio{display:block;width:100%;height:44px}.lead-art img{aspect-ratio:16/9;object-fit:contain;background:var(--ds-image)}.thumb img{object-fit:contain;background:var(--ds-sand)}@media(max-width:767px){.magazine{padding:24px}header h1{font-size:36px}.dateline{flex-wrap:wrap}.listen{padding:12px}}
+
+.header-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.listen-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+</style>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("edit-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#stories">Skip to the stories</a>
+<main class="magazine">
+<div class="dateline"><span>22 OCTOBER 2026 · THURSDAY</span><span>25 STORIES · 1 EDITION</span></div>
+<header><div class="header-tools"><span>THE THURSDAY EDIT · DAILY SNAPSHOT</span><button aria-label="Switch to dark theme" aria-pressed="false" id="theme-toggle" type="button">Dark mode <span aria-hidden="true">◐</span></button></div>
+<h1>The October 22 Edit</h1><p>25 stories on work agents, AGI timelines, agent infrastructure, supply-chain security, lunar compute, robots and the business of AI.</p></header>
+<div class="index-bar"><span>AI · Tools · Tech · Cyberpunk · Business</span><nav><a href="#listen">Listen</a><a href="../#archive">Archive</a></nav></div>
+<div class="listen listen-issue" id="listen"><div class="listen-heading"><span>LISTEN TO THE ISSUE</span><span>17:27 · SADACHBIA · 1×</span></div><div class="audio-part"><label for="daily-audio">Thursday briefing</label><audio id="daily-audio" preload="metadata" src="1-edit-2026-10-22.mp3">Your browser cannot play this audio. <a href="1-edit-2026-10-22.mp3">Download the recording</a></audio><div class="audio-player" data-audio="daily-audio" data-title="the Thursday briefing"><button aria-controls="daily-audio" aria-label="Play the Thursday briefing" class="audio-play" type="button"><span aria-hidden="true" class="play-symbol">▶</span></button><div class="audio-track"><div class="audio-status">Ready to listen</div><input aria-label="Seek in the Thursday briefing" aria-valuetext="0:00" class="audio-seek" max="100" min="0" step="0.1" type="range" value="0"/></div><span class="audio-time"><span class="elapsed">0:00</span> / <span class="duration">0:00</span></span></div><p class="audio-error" hidden role="status"></p><a class="audio-download" download href="1-edit-2026-10-22.mp3">Download audio ↓</a><noscript><p>Use the download link to listen. Interactive playback needs JavaScript.</p></noscript></div></div>
+<section class="edition" id="stories"><div class="edition-top"><span class="edition-kicker">THE ISSUE</span><span>25 stories</span></div><h2>Agents get boundaries</h2>
+<figure class="lead-art"><img alt="Astrolab’s FLIP lunar rover carrying HPE’s Spaceborne Computer-4" loading="eager" src="2-hero22-flip.jpeg"/><figcaption>Featured: HPE’s Spaceborne Computer-4 is planned for Astrolab’s FLIP lunar rover (story 16). Image: <a href="https://payloadspace.com/hewlett-packard-enterprise-to-send-ai-compute-module-to-the-moon/">Astrolab via Payload</a>.</figcaption></figure>
+<p class="caption">Thursday, October 22, 2026 · A daily snapshot, not a live feed</p>
+<h2 class="category-heading" id="category-1">AI</h2>
+<article class="story" id="story-01"><div class="story-meta"><span class="tag">AI</span><span class="story-no">01</span><span class="read-time">1 min read</span></div>
+<h3>Claude Duet is Anthropic’s bid to make Claude an always-on work agent</h3><p class="dek">The research-preview app moves beyond chat into scheduling, monitoring, research and small app building.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Anthropic is testing a Claude product designed to sit on top of work, not just answer questions.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Claude Duet is available as a research preview on iOS, Android and the web, with a standalone interface built around Claude Opus 5.5.</li>
+<li><strong>Details:</strong> The app can prepare morning briefings, watch connected apps and documents, manage calendars, create dashboards and forecasts, research topics and build simple web apps or prototypes.</li>
+<li><strong>Why it matters:</strong> Anthropic says Duet uses Claude memory, skills and connected applications, can browse in a dedicated virtual machine, and asks for approval before sensitive actions such as purchases or deletions.</li>
+<li><strong>Caveat:</strong> It is US-only and waitlisted for Pro and Max subscribers. Anthropic says Duet can misread conversational context, misunderstand urgency and perform personal errands less reliably.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Verge</p><div class="source-links"><a href="https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent" rel="noopener noreferrer" target="_blank">The Verge</a>
+</div></div></details></article>
+<article class="story" id="story-02"><div class="story-meta"><span class="tag">AI</span><span class="story-no">02</span><span class="read-time">1 min read</span></div>
+<h3>Demis Hassabis now thinks AGI could arrive in two to three years</h3><p class="dek">The DeepMind chief says the finish line is near, and safety is the point of winning.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>The head of Google DeepMind is giving a shorter AGI timeline and framing the race as a safety obligation.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> In a Wall Street Journal profile summarized by The Verge, Demis Hassabis said AGI could arrive within two to three years and that his timeline is becoming "nearer and nearer."</li>
+<li><strong>Details:</strong> Hassabis said his drive to win is about ensuring that advanced intelligence is stewarded responsibly, not winning for its own sake.</li>
+<li><strong>Why it matters:</strong> The profile describes AGI as technology that could materially reshape society and the economy.</li>
+<li><strong>Caveat:</strong> This is a forecast from the leader of a competing frontier lab, not a technical milestone, independent benchmark or committed product date.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Verge</p><div class="source-links"><a href="https://www.theverge.com/ai-artificial-intelligence/1015277/google-deepminds-demis-hassabis-thinks-agi-is-two-to-three-years-away" rel="noopener noreferrer" target="_blank">The Verge</a>
+</div></div></details></article>
+<article class="story" id="story-03"><div class="story-meta"><span class="tag">AI</span><span class="story-no">03</span><span class="read-time">1 min read</span></div>
+<h3>ChatGPT ads expand to 26 more countries</h3><p class="dek">OpenAI is widening the test across free and Go-tier users in 89 countries.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>ChatGPT advertising is moving from a US experiment to a broader international test.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> OpenAI is expanding ads to free and Go-tier users in 26 additional countries, including Argentina, Colombia, Peru, Nigeria, South Africa, Serbia, Ukraine, Bangladesh and Pakistan.</li>
+<li><strong>Details:</strong> The expansion follows the US launch in February and brings the test to 89 countries, according to the report.</li>
+<li><strong>Why it matters:</strong> The move shows OpenAI testing advertising alongside subscriptions as a way to support a large free user base.</li>
+<li><strong>Caveat:</strong> This is a monetization expansion, not a new model capability. Placement, controls and eligibility can vary by market and account tier.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Verge</p><div class="source-links"><a href="https://www.theverge.com/ai-artificial-intelligence/1015567/chatgpt-ads-26-countries-rollout" rel="noopener noreferrer" target="_blank">The Verge</a>
+</div></div></details></article>
+<article class="story" id="story-04"><div class="story-meta"><span class="tag">AI</span><span class="story-no">04</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="Flapping Airplanes co-founders Ben Spector, Asher Spector and Aidan Smith" loading="lazy" src="3-flapping22.jpg"/><figcaption>Image: Flapping Airplanes.</figcaption></figure>
+<h3>Flapping Airplanes raises $1 billion at a reported $6 billion valuation</h3><p class="dek">The young lab says it wants to train large models with much less data.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>A year-old AI lab is being priced like a frontier contender before publishing a flagship model.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Flapping Airplanes announced a $1 billion Series A co-led by Index Ventures and Lux Capital, with TechCrunch reporting a $6 billion valuation.</li>
+<li><strong>Details:</strong> The new round came nine months after launch and a $180 million seed at a $1.5 billion valuation. The company is led by Aidan Smith, Asher Spector and Ben Spector.</li>
+<li><strong>Why it matters:</strong> The lab says it is rethinking how large models learn and building a megakernel framework that keeps training, inference and games in one kernel while overlapping memory-bound inference with compute-bound training.</li>
+<li><strong>Caveat:</strong> The valuation is reported, not formally confirmed in the funding post. The performance claims are company claims, and no public flagship model or independent benchmark yet settles the thesis.</li>
+</ul>
+<p class="source-label">2026-10-21 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-05"><div class="story-meta"><span class="tag">AI</span><span class="story-no">05</span><span class="read-time">1 min read</span></div>
+<h3>Hackers reportedly used Claude and Grok agents against more than 400 targets</h3><p class="dek">A security report says AI agents helped automate attacks on Latin American financial systems.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Agentic AI is already being folded into cybercrime workflows, according to a report on a campaign against banks and payment companies.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The Information, citing security firm Straiker, reported that a group calling itself CyberCartel used agents powered by Anthropic’s Claude and xAI’s Grok against more than 400 Latin American banks and payment targets.</li>
+<li><strong>Details:</strong> The report said the agents stole passwords and consumer data, accessed accounts and required little human effort.</li>
+<li><strong>Why it matters:</strong> Anthropic investigated the activity and blocked the hackers’ use of Claude, according to the report.</li>
+<li><strong>Caveat:</strong> This is a reported security finding, not a public court record. Model use does not mean the model providers directed or approved the attacks, and the full methodology and victim list were not published.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Information</p><div class="source-links"><a href="https://www.theinformation.com/articles/hackers-used-claude-grok-fully-automate-attacks-banks" rel="noopener noreferrer" target="_blank">The Information</a>
+<a href="https://www.securityweek.com/report-hackers-leverage-claude-and-grok-to-attack-400-latin-american-targets/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-6">AI tools / open source</h2>
+<article class="story" id="story-06"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">06</span><span class="read-time">1 min read</span></div>
+<h3>Recursive launches Flint, a free coding model built largely by its own machine</h3><p class="dek">The Apache-licensed model is designed to run privately on a laptop.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Recursive’s first public model turns its self-improvement pitch into a downloadable developer tool.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Flint is a free Apache 2.0 model on Hugging Face, built as a 40-billion-parameter mixture-of-experts model with about 2.5 billion active parameters.</li>
+<li><strong>Details:</strong> Recursive says the model was developed largely by its Eureka Machine system and can run locally for privacy or offline use.</li>
+<li><strong>Why it matters:</strong> Company tests report about 131 tokens per second on an M4 Pro MacBook and more than 150 tokens per second on an RTX Spark-class machine; its average coding score trails Qwen 3.8 27B.</li>
+<li><strong>Also:</strong> Recursive has raised $650 million at a $4.65 billion valuation and separately announced $410 million in AWS compute spending.</li>
+<li><strong>Caveat:</strong> The benchmark and speed figures are company-reported. Recursive’s longer-term recursive self-improvement goal remains a research direction, not an achieved result.</li>
+</ul>
+<p class="source-label">2026-10-21 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-07"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">07</span><span class="read-time">1 min read</span></div>
+<h3>Omnara pitches an open-source control plane for managed agents</h3><p class="dek">The project offers durable agents, sandboxes, secrets and permissions outside the major labs.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Omnara wants teams to run Claude Code-style managed agents without locking the control plane to one model provider.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The project describes itself as an open-source alternative to Claude Managed Agents and the OpenAI Agents API, with durable agents, isolated sandboxes, secrets and integrations.</li>
+<li><strong>Details:</strong> Agents keep state in Postgres, are driven through an event log and can be resumed across workers after failures.</li>
+<li><strong>Why it matters:</strong> A lightweight daemon can connect laptops, home labs or cloud machines as agent workers, while the control plane handles authentication, RBAC and audit trails.</li>
+<li><strong>Caveat:</strong> This is an early self-hosted project. Its repository and documentation describe the design, but self-hosting shifts patching, sandbox isolation and credential security onto the operator.</li>
+</ul>
+<p class="source-label">Accessed 2026-10-22 · GitHub / Omnara docs</p><div class="source-links"><a href="https://github.com/omnara-ai/omnara" rel="noopener noreferrer" target="_blank">GitHub / Omnara docs</a>
+<a href="https://docs.omnara.com/" rel="noopener noreferrer" target="_blank">Omnara docs</a>
+<a href="https://news.ycombinator.com/item?id=47212555" rel="noopener noreferrer" target="_blank">Hacker News discussion</a>
+</div></div></details></article>
+<article class="story" id="story-08"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">08</span><span class="read-time">1 min read</span></div>
+<h3>Alter adds access control for multi-user AI agents</h3><p class="dek">The YC-backed layer gives agents scoped identities, approvals, audits and memory boundaries.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Alter is targeting the gap between a shared agent and the individual permissions of the people using it.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Alter proxies agent API calls and gives each agent identity, scoped grants and credential injection without exposing raw secrets to the model.</li>
+<li><strong>Details:</strong> Policies can enforce read-only access, scoped writes, rate limits, human approval for risky operations, revocation and audit trails.</li>
+<li><strong>Why it matters:</strong> The system partitions memory by end user and agent, aiming to prevent one user’s shared-agent memory from leaking into another user’s context.</li>
+<li><strong>Caveat:</strong> The claims come from the company’s launch materials and Hacker News discussion. The site says SOC 2 Type II is in progress, so the control should not be treated as independently certified yet.</li>
+</ul>
+<p class="source-label">Accessed 2026-10-22 · Alter</p><div class="source-links"><a href="https://alterauth.com/" rel="noopener noreferrer" target="_blank">Alter</a>
+<a href="https://news.ycombinator.com/item?id=47180131" rel="noopener noreferrer" target="_blank">Hacker News discussion</a>
+<a href="https://www.ycombinator.com/companies/alter" rel="noopener noreferrer" target="_blank">YC company page</a>
+</div></div></details></article>
+<article class="story" id="story-09"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">09</span><span class="read-time">1 min read</span></div>
+<h3>DuckDB 2.0 becomes a long-term support release</h3><p class="dek">The local analytics engine gets async I/O, VARIANT, triggers, agent mode and a server protocol.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>DuckDB 2.0 is a broad platform release, not just a query-engine tune-up.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Version 2.0, codenamed Cinnamon Teal, arrives after roughly 20,000 commits since DuckDB 1.5.</li>
+<li><strong>Details:</strong> The release includes the Quack server protocol, asynchronous I/O, a native VARIANT type, agent mode, triggers and an extensible SQL parser.</li>
+<li><strong>Why it matters:</strong> DuckDB says 2.0 will be supported until at least October 2027; 1.4 is supported through November 2026 and 1.5 has extended support through March 2027.</li>
+<li><strong>Caveat:</strong> The team warns that breaking changes require migration work, and clients, drivers and extensions are rolling out on different schedules.</li>
+</ul>
+<p class="source-label">2026-10-21 · DuckDB</p><div class="source-links"><a href="https://duckdb.org/2026/10/21/announcing-duckdb-200" rel="noopener noreferrer" target="_blank">DuckDB</a>
+</div></div></details></article>
+<article class="story" id="story-10"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">10</span><span class="read-time">1 min read</span></div>
+<h3>LiteLLM 1.107.0 on PyPI carried a credential-stealing backdoor</h3><p class="dek">SafeDep says the poisoned package could execute on Python startup even without an import.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>A popular AI gateway package became a supply-chain risk after a compromised PyPI release.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> SafeDep reported that all seven LiteLLM 1.107.0 wheel distributions on PyPI contained malicious code in site-packages initialization files.</li>
+<li><strong>Details:</strong> The code could run at Python startup, steal SSH keys, cloud and CI/CD credentials, browser passwords, LLM proxy keys and tokens, then install an hourly remote-access mechanism.</li>
+<li><strong>Why it matters:</strong> SafeDep found no malicious code in the corresponding GitHub tag, while 1.106.2 and the 1.107 release candidates were clean. PyPI removed the compromised release.</li>
+<li><strong>Caveat:</strong> Users need to check the exact installed version and treat exposed credentials as compromised. The report did not establish attribution or a final installation count.</li>
+</ul>
+<p class="source-label">2026-10-21 · SafeDep</p><div class="source-links"><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/" rel="noopener noreferrer" target="_blank">SafeDep</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-11">Tech</h2>
+<article class="story" id="story-11"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">11</span><span class="read-time">1 min read</span></div>
+<h3>CISA warns SafePay ransomware has hit roughly 600 victims in 2026</h3><p class="dek">The advisory details credential abuse, VPN weaknesses, backup deletion and double extortion.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>SafePay is scaling fast enough that five governments are telling defenders to harden identity and backups now.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> CISA, the FBI, the US Secret Service and international partners say SafePay has claimed about 600 victims across the Americas, Europe and Australia this year.</li>
+<li><strong>Details:</strong> The group gains access through compromised credentials or known vulnerabilities in internet-facing devices and VPN concentrators, then uses legitimate tools to move and steal data.</li>
+<li><strong>Why it matters:</strong> SafePay deletes backups, encrypts files, leaves a README ransom note and sometimes calls victims to increase pressure.</li>
+<li><strong>Caveat:</strong> The advisory is defensive guidance rather than a named-victim disclosure. It does not attribute the group to a state or give a confirmed total of successful ransom payments.</li>
+</ul>
+<p class="source-label">2026-10-21 · CISA</p><div class="source-links"><a href="https://www.cisa.gov/news-events/news/cisa-fbi-and-partners-warn-organizations-safepay-ransomware-actors-targeting-multiple-critical" rel="noopener noreferrer" target="_blank">CISA</a>
+</div></div></details></article>
+<article class="story" id="story-12"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">12</span><span class="read-time">1 min read</span></div>
+<h3>Railway pauses deployments after possible environment-variable breach</h3><p class="dek">The platform says an unauthorized party may have reached encrypted variables and some decrypted contents.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Railway is treating environment variables as potentially exposed and telling customers to rotate secrets.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Railway said an unauthorized third party may have accessed encrypted environment variables and, for some customers, the decrypted contents of those variables.</li>
+<li><strong>Details:</strong> The company suspects the incident is connected to a broader set of attacks against platform companies that provide access to AI inference providers.</li>
+<li><strong>Why it matters:</strong> Railway paused all deployments and advised users to rotate every environment variable, API key and private registry credential.</li>
+<li><strong>Caveat:</strong> The investigation is ongoing. Railway has not given a final count of affected projects or variables, and the reported scope may change.</li>
+</ul>
+<p class="source-label">2026-10-21 · Railway</p><div class="source-links"><a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st" rel="noopener noreferrer" target="_blank">Railway</a>
+</div></div></details></article>
+<article class="story" id="story-13"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">13</span><span class="read-time">1 min read</span></div>
+<h3>GitLab ships seven critical patch releases, including a CVSS 10 regex-compiler RCE</h3><p class="dek">Self-managed customers are told to patch immediately; GitLab.com is already updated.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>A maximum-severity GitLab flaw makes the latest self-managed release an emergency patch.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> GitLab released versions 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10 and 18.11.13 for multiple critical, high, medium and low-severity vulnerabilities.</li>
+<li><strong>Details:</strong> CVE-2026-110264 carries a CVSS score of 10.0 and involves an integer overflow in the integrated regex compiler that could allow unauthenticated remote code execution.</li>
+<li><strong>Why it matters:</strong> GitLab.com is already patched; GitLab Dedicated tenants on the listed internal versions already include the fixes, and GitLab released two detections for self-managed customers.</li>
+<li><strong>Caveat:</strong> GitLab says detailed issue descriptions will become public 90 days after release. Self-managed users still need to patch and check logs rather than assume hosting isolation.</li>
+</ul>
+<p class="source-label">2026-10-21 · GitLab</p><div class="source-links"><a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/" rel="noopener noreferrer" target="_blank">GitLab</a>
+</div></div></details></article>
+<article class="story" id="story-14"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">14</span><span class="read-time">1 min read</span></div>
+<h3>Intel reports progress on factory expansion as tool installation begins</h3><p class="dek">A Phoenix-area fab is receiving tools and an Ohio site has its first roof truss.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Intel is showing physical progress on the manufacturing buildout behind its foundry ambitions.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Bloomberg reports that tool installation is underway at Fab 62 near Phoenix, a sign that the shell is moving toward production preparation.</li>
+<li><strong>Details:</strong> Intel has also installed the first roof truss at its New Albany, Ohio manufacturing site.</li>
+<li><strong>Why it matters:</strong> The update matters because Intel’s strategy depends on turning delayed construction into leading-edge capacity for its own chips and external foundry customers.</li>
+<li><strong>Caveat:</strong> Construction and tool installation are progress, not proof of yield, volume output or customer commitments. The report does not establish a new production date.</li>
+</ul>
+<p class="source-label">2026-10-21 · Bloomberg</p><div class="source-links"><a href="https://www.bloomberg.com/news/articles/2026-10-21/intel-touts-factory-expansion-progress-in-sign-of-growing-demand" rel="noopener noreferrer" target="_blank">Bloomberg</a>
+</div></div></details></article>
+<article class="story" id="story-15"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">15</span><span class="read-time">1 min read</span></div>
+<h3>SAP cloud growth beats expectations</h3><p class="dek">Third-quarter cloud revenue rose 25% at constant currency, ahead of the analyst forecast.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>SAP’s cloud transition is still producing growth even as AI changes how enterprise software is judged.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> SAP said third-quarter cloud revenue rose 25% at constant currency to €6.67 billion, or about $7.49 billion.</li>
+<li><strong>Details:</strong> The result exceeded the €6.57 billion average analyst estimate cited by Bloomberg.</li>
+<li><strong>Why it matters:</strong> The number is an important signal for enterprise software demand as investors ask whether AI will strengthen or displace incumbent platforms.</li>
+<li><strong>Caveat:</strong> One quarter of cloud growth does not prove that SAP’s AI products are driving the gain, and currency-adjusted cloud revenue is not the same as overall profit momentum.</li>
+</ul>
+<p class="source-label">2026-10-21 · Bloomberg</p><div class="source-links"><a href="https://www.bloomberg.com/news/articles/2026-10-21/sap-cloud-growth-beats-forecast-in-sign-of-software-s-resilience" rel="noopener noreferrer" target="_blank">Bloomberg</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-16">Cyberpunk-space</h2>
+<article class="story" id="story-16"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">16</span><span class="read-time">1 min read</span></div>
+<h3>HPE’s next Spaceborne computer is headed for the Moon on Astrolab’s FLIP rover</h3><p class="dek">Spaceborne Computer-4 will test lunar LLMs, imaging, autonomous monitoring and edge cybersecurity.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>HPE is taking edge computing from the ISS to the lunar surface.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Astrolab and HPE announced that Spaceborne Computer-4 will fly on the FLIP lunar rover mission, which is expected to launch this year.</li>
+<li><strong>Details:</strong> The payload will run large language models locally, process visual and LiDAR data, support autonomous monitoring, and test a NASA multi-model neural network for astronaut tasks.</li>
+<li><strong>Why it matters:</strong> Deloitte’s Silent Shield intrusion-detection system will use HPE telemetry to model normal behavior and flag anomalies; the fanless system uses a radiator, low-power CPU and GPU and KIOXIA solid-state storage.</li>
+<li><strong>Caveat:</strong> This is a planned flight and test program, not a completed lunar deployment. Launch timing, surface operations and model performance remain to be demonstrated.</li>
+</ul>
+<p class="source-label">2026-10-21 · Payload</p><div class="source-links"><a href="https://payloadspace.com/hewlett-packard-enterprise-to-send-ai-compute-module-to-the-moon/" rel="noopener noreferrer" target="_blank">Payload</a>
+</div></div></details></article>
+<article class="story" id="story-17"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">17</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="NVIDIA Isaac robotics platform illustration" loading="lazy" src="4-nvidia-isaac22.jpg"/><figcaption>Image: NVIDIA.</figcaption></figure>
+<h3>NVIDIA expands Isaac as a full-stack humanoid and robot platform</h3><p class="dek">The update spans GR00T, Jetson Thor, Isaac OS, simulation and European industrial partners.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>NVIDIA is trying to make Isaac the common computing layer for humanoids and mobile robots.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The new Agile ONE SN humanoid reference platform combines Isaac GR00T, Jetson Thor and a planned Halos safety stack.</li>
+<li><strong>Details:</strong> NVIDIA introduced Isaac OS as a common runtime, Isaac Lab 3.0 for simulation, and an open workflow combining ChatGPT Astra, Isaac and Cosmos on DGX Station.</li>
+<li><strong>Why it matters:</strong> The company named ABB and other European partners in an ecosystem push around industrial robots.</li>
+<li><strong>Caveat:</strong> These are vendor platform announcements and reference designs. They do not show that general-purpose humanoid capability is ready outside controlled demonstrations.</li>
+</ul>
+<p class="source-label">2026-10-21 · NVIDIA</p><div class="source-links"><a href="https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data" rel="noopener noreferrer" target="_blank">NVIDIA</a>
+</div></div></details></article>
+<article class="story" id="story-18"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">18</span><span class="read-time">1 min read</span></div>
+<h3>Walmart will let AI agents shop with approvals and spending limits</h3><p class="dek">The retailer is building agent profiles and a gateway instead of blocking automated buyers.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Walmart is preparing for customers to delegate shopping to agents while keeping account-level control.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The Verge reports that Walmart plans to allow approved AI agents to shop on its site starting next month.</li>
+<li><strong>Details:</strong> Agent Profiles will let customers review agent actions, approve all purchases by default, set spending limits such as $100, or disable the agent.</li>
+<li><strong>Why it matters:</strong> An Agent Gateway beta using MCP will expose product, cart and checkout capabilities while limiting an agent’s access to the data it needs.</li>
+<li><strong>Caveat:</strong> This is an upcoming rollout. The report does not settle how Walmart will handle mistaken purchases, fraud liability or agents that misinterpret broad instructions.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Verge</p><div class="source-links"><a href="https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents" rel="noopener noreferrer" target="_blank">The Verge</a>
+</div></div></details></article>
+<article class="story" id="story-19"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">19</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="GM OnStar AI Assistant interface" loading="lazy" src="5-onstar22.jpg"/><figcaption>Image: GM.</figcaption></figure>
+<h3>GM turns OnStar into an AI assistant and connected-car platform</h3><p class="dek">The assistant debuts in the 2027 Cadillac Lyriq, followed by a unified OnStar app.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>GM wants the subscription car to feel more like a responsive software product.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> GM said its in-house OnStar AI Assistant will debut in the 2027 Cadillac Lyriq in the coming months and reach other models later.</li>
+<li><strong>Details:</strong> A new OnStar mobile app will arrive in 2027 and replace the current Guardian and brand apps.</li>
+<li><strong>Why it matters:</strong> The company plans live camera views, automatic crash recordings and proactive support based on vehicle and driver behavior.</li>
+<li><strong>Caveat:</strong> A debut is not broad availability. The privacy trade-offs, subscription value and reliability of proactive interventions remain untested at scale.</li>
+</ul>
+<p class="source-label">2026-10-21 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-20"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">20</span><span class="read-time">1 min read</span></div>
+<h3>Meta says 10 million people have set up Muse agents</h3><p class="dek">The company is trying to turn Muse from an AI demo into a daily consumer habit.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Meta is giving an early usage number for Muse while positioning agents as part of its next computing platform.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Mark Zuckerberg said on Meta’s earnings call that 10 million people have set up Muse agents.</li>
+<li><strong>Details:</strong> He said about 25% of people who set up an agent use it on any given day, and that retention improves as people use the product.</li>
+<li><strong>Why it matters:</strong> Sensor Tower estimated about 10 million US downloads of the Muse app, according to the report.</li>
+<li><strong>Caveat:</strong> Set-up is not the same as sustained active use. The engagement figures are company-reported, and the download estimate is not a direct measure of retained users.</li>
+</ul>
+<p class="source-label">2026-10-21 · The Verge</p><div class="source-links"><a href="https://www.theverge.com/tech/1016029/10-million-people-have-already-set-up-muse-agents" rel="noopener noreferrer" target="_blank">The Verge</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-21">Business / other</h2>
+<article class="story" id="story-21"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">21</span><span class="read-time">1 min read</span></div>
+<h3>Legora raises $550 million at an $8.8 billion valuation</h3><p class="dek">The legal AI company says ARR has passed $200 million.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Legal AI remains one of the hottest enterprise categories, with Legora’s valuation rising again.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Legora announced a $550 million Series E led by Atreides at an $8.8 billion valuation.</li>
+<li><strong>Details:</strong> The company says annual recurring revenue is now more than $200 million, up from $100 million when it announced an extended Series D at a $5.6 billion valuation in April.</li>
+<li><strong>Why it matters:</strong> The round follows Harvey’s $550 million raise at a $15.5 billion valuation about a month earlier, keeping pressure on legal AI rivals.</li>
+<li><strong>Caveat:</strong> The valuation and ARR figures come from a private company announcement. The funding shows investor demand, not independently verified customer outcomes.</li>
+</ul>
+<p class="source-label">2026-10-21 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-22"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">22</span><span class="read-time">1 min read</span></div>
+<h3>Blacksmith reaches a $1 billion valuation for AI-era CI infrastructure</h3><p class="dek">The developer-infrastructure startup raised $66 million led by Sequoia.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>AI coding agents are increasing the value of the build-and-test systems that keep generated software moving.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Blacksmith announced a $66 million Series C led by Sequoia Capital at a $1 billion valuation.</li>
+<li><strong>Details:</strong> The company says its continuous-integration platform has grown annual recurring revenue 17-fold and processed 90 million CI jobs, with customers including Mercury and Granola.</li>
+<li><strong>Why it matters:</strong> The round came two months after a $45 million Series B at a $550 million valuation and brings total funding to $125 million.</li>
+<li><strong>Caveat:</strong> The revenue growth and usage numbers are company-reported. Strong demand for AI-generated code does not prove those growth rates will persist.</li>
+</ul>
+<p class="source-label">2026-10-21 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-23"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">23</span><span class="read-time">1 min read</span></div>
+<h3>Meta is ordered to pay $25 billion in New Mexico Cambridge Analytica case</h3><p class="dek">The judge cut a theoretical $219.5 billion award to a $25 billion penalty.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>A New Mexico court has attached an enormous price tag to Meta’s privacy violations.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> A jury found Meta liable for misleading state residents about data safeguards and harmful information.</li>
+<li><strong>Details:</strong> The jury found more than 43 million violations; the filing awarded $219.5 billion before the judge reduced the penalty to $25 billion.</li>
+<li><strong>Why it matters:</strong> Judge Francis Mathew said interest will accrue at 15% a year until the penalty is paid. Meta said it is confident it will prevail on appeal.</li>
+<li><strong>Caveat:</strong> This is a court order, but the amount is not final while the appeal is pending.</li>
+</ul>
+<p class="source-label">2026-10-21 · CNBC</p><div class="source-links"><a href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html" rel="noopener noreferrer" target="_blank">CNBC</a>
+</div></div></details></article>
+<article class="story" id="story-24"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">24</span><span class="read-time">1 min read</span></div>
+<h3>Saint-Étienne is betting that design can succeed where industry failed</h3><p class="dek">The former arms and coal city is using schools, studios and design-led manufacturing to build a new economy.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Saint-Étienne’s design strategy is moving from branding exercise to economic policy.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The city turned its former national arms factory into the Cité du Design and built a design district around the site and Ésad Saint-Étienne.</li>
+<li><strong>Details:</strong> A report finds designers and manufacturers drawn by affordable studios, grant support, workshops and a strategy linking design to production and public services.</li>
+<li><strong>Why it matters:</strong> Saint-Étienne joined the UNESCO Creative Cities of Design network in 2010, and the National Gallery of Design opened there in June 2026. The city treats industrial skills as an asset rather than a legacy to erase.</li>
+<li><strong>Caveat:</strong> The report is optimistic but not a full economic audit. It acknowledges that the city still has to prove design can deliver durable, broad-based employment.</li>
+</ul>
+<p class="source-label">2026-10-21 · Monocle</p><div class="source-links"><a href="https://monocle.com/affairs/urbanism/saint-etienne-france-design-city/" rel="noopener noreferrer" target="_blank">Monocle</a>
+</div></div></details></article>
+<article class="story" id="story-25"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">25</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="Shanghai Grand Opera House along the Huangpu River" loading="lazy" src="6-shanghai22.jpg"/><figcaption>Image: Yumeng Zhu via Smithsonian.</figcaption></figure>
+<h3>Shanghai Grand Opera House opens with a public rooftop staircase</h3><p class="dek">Snøhetta’s nearly 1.6-million-square-foot venue combines three halls with open public spaces.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Shanghai’s newest cultural landmark is designed to operate as both a performance venue and a public space.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The Shanghai Grand Opera House opened this week on the Huangpu River, a decade after Snøhetta won the international design competition.</li>
+<li><strong>Details:</strong> The nearly 1.6-million-square-foot building has three auditoriums with a combined 4,200 seats: the 2,000-seat Harmony Hall, the 1,200-seat Soar Theatre and the flexible Open Stage.</li>
+<li><strong>Why it matters:</strong> A huge exterior staircase spirals from the riverfront to an open-air observation deck, gathering spaces and stage; the inaugural season runs from October through February 2027 with 82 performances, including Eifman Ballet, American Ballet Theatre, Staatskapelle Berlin and Chinese xiqu.</li>
+<li><strong>Caveat:</strong> The opening establishes the venue, not its long-term artistic or financial performance. The public-access design and 82-performance season still have to prove durable audience demand.</li>
+</ul>
+<p class="source-label">2026-10-21 · Smithsonian</p><div class="source-links"><a href="https://www.smithsonianmag.com/smart-news/shanghais-audacious-new-opera-house-just-opened-its-doors-and-a-gravity-defying-staircase-to-the-public-180989726/" rel="noopener noreferrer" target="_blank">Smithsonian</a>
+</div></div></details></article>
+</section>
+<footer class="colophon"><div class="colophon-heading"><h2>Sources &amp; colophon</h2><span>22 OCTOBER 2026 · DAILY SNAPSHOT</span></div><p>25 stories, grouped by category. Research claims, reported deals, draft rules and vendor benchmarks are identified in each briefing.</p><ol class="source-index">
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent">Claude Duet is Anthropic’s bid to make Claude an always-on work agent</a></li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1015277/google-deepminds-demis-hassabis-thinks-agi-is-two-to-three-years-away">Demis Hassabis now thinks AGI could arrive in two to three years</a></li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1015567/chatgpt-ads-26-countries-rollout">ChatGPT ads expand to 26 more countries</a></li>
+<li><a href="https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/">Flapping Airplanes raises $1 billion at a reported $6 billion valuation</a></li>
+<li><a href="https://www.theinformation.com/articles/hackers-used-claude-grok-fully-automate-attacks-banks">Hackers reportedly used Claude and Grok agents against more than 400 targets</a></li>
+<li><a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/">Recursive launches Flint, a free coding model built largely by its own machine</a></li>
+<li><a href="https://github.com/omnara-ai/omnara">Omnara pitches an open-source control plane for managed agents</a></li>
+<li><a href="https://alterauth.com/">Alter adds access control for multi-user AI agents</a></li>
+<li><a href="https://duckdb.org/2026/10/21/announcing-duckdb-200">DuckDB 2.0 becomes a long-term support release</a></li>
+<li><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">LiteLLM 1.107.0 on PyPI carried a credential-stealing backdoor</a></li>
+<li><a href="https://www.cisa.gov/news-events/news/cisa-fbi-and-partners-warn-organizations-safepay-ransomware-actors-targeting-multiple-critical">CISA warns SafePay ransomware has hit roughly 600 victims in 2026</a></li>
+<li><a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st">Railway pauses deployments after possible environment-variable breach</a></li>
+<li><a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab ships seven critical patch releases, including a CVSS 10 regex-compiler RCE</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-21/intel-touts-factory-expansion-progress-in-sign-of-growing-demand">Intel reports progress on factory expansion as tool installation begins</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-21/sap-cloud-growth-beats-forecast-in-sign-of-software-s-resilience">SAP cloud growth beats expectations</a></li>
+<li><a href="https://payloadspace.com/hewlett-packard-enterprise-to-send-ai-compute-module-to-the-moon/">HPE’s next Spaceborne computer is headed for the Moon on Astrolab’s FLIP rover</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data">NVIDIA expands Isaac as a full-stack humanoid and robot platform</a></li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents">Walmart will let AI agents shop with approvals and spending limits</a></li>
+<li><a href="https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/">GM turns OnStar into an AI assistant and connected-car platform</a></li>
+<li><a href="https://www.theverge.com/tech/1016029/10-million-people-have-already-set-up-muse-agents">Meta says 10 million people have set up Muse agents</a></li>
+<li><a href="https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/">Legora raises $550 million at an $8.8 billion valuation</a></li>
+<li><a href="https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/">Blacksmith reaches a $1 billion valuation for AI-era CI infrastructure</a></li>
+<li><a href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html">Meta is ordered to pay $25 billion in New Mexico Cambridge Analytica case</a></li>
+<li><a href="https://monocle.com/affairs/urbanism/saint-etienne-france-design-city/">Saint-Étienne is betting that design can succeed where industry failed</a></li>
+<li><a href="https://www.smithsonianmag.com/smart-news/shanghais-audacious-new-opera-house-just-opened-its-doors-and-a-gravity-defying-staircase-to-the-public-180989726/">Shanghai Grand Opera House opens with a public rooftop staircase</a></li>
+</ol><p>Intro/outro music: <a href="https://freemusicarchive.org/music/alex-morgan/cocktail-bar-lounge-jazz-vol-3/muted-trumpet-coffee-shop-warm-quick-set/">"Muted Trumpet Coffee Shop Warm Quick Set"</a> by Alex Morgan via Free Music Archive, CC BY 4.0, trimmed.</p></footer>
+</main>
+<script>(() => {
+  'use strict';
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const themeUI = () => {
+    const dark = root.dataset.theme === 'dark';
+    toggle.innerHTML = `${dark ? 'Light' : 'Dark'} mode <span aria-hidden="true">${dark ? '☀' : '◐'}</span>`;
+    toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
+    toggle.setAttribute('aria-pressed', String(dark));
+  };
+  themeUI();
+  toggle.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('edit-theme', root.dataset.theme); } catch (_) {}
+    themeUI();
+  });
+  const format = seconds => Number.isFinite(seconds) ? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}` : '0:00';
+  document.querySelectorAll('.audio-player').forEach(player => {
+    const audio = document.getElementById(player.dataset.audio);
+    const button = player.querySelector('.audio-play');
+    const seek = player.querySelector('.audio-seek');
+    const error = player.nextElementSibling;
+    const title = player.dataset.title;
+    const status = player.querySelector('.audio-status');
+    const update = () => {
+      player.querySelector('.elapsed').textContent = format(audio.currentTime);
+      if (Number.isFinite(audio.duration)) {
+        player.querySelector('.duration').textContent = format(Math.round(audio.duration));
+        seek.max = audio.duration;
+        seek.value = audio.currentTime;
+        seek.style.setProperty('--progress', `${audio.currentTime / audio.duration * 100}%`);
+      }
+      seek.setAttribute('aria-valuetext', `${format(audio.currentTime)} of ${player.querySelector('.duration').textContent}`);
+      button.setAttribute('aria-label', `${audio.paused ? 'Play' : 'Pause'} ${title}`);
+      player.querySelector('.play-symbol').textContent = audio.paused ? '▶' : 'Ⅱ';
+    };
+    button.addEventListener('click', async () => {
+      if (!audio.paused) { audio.pause(); return; }
+      document.querySelectorAll('audio').forEach(other => { if (other !== audio) other.pause(); });
+      error.hidden = true;
+      status.textContent = 'Loading audio…';
+      try { await audio.play(); } catch (_) {
+        status.textContent = 'Playback unavailable';
+        error.textContent = 'Audio could not start. Try play again or download the recording below.';
+        error.hidden = false;
+        update();
+      }
+    });
+    seek.addEventListener('input', () => {
+      if (Number.isFinite(audio.duration)) { audio.currentTime = Number(seek.value); update(); }
+    });
+    ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked'].forEach(event => audio.addEventListener(event, update));
+    audio.addEventListener('playing', () => { status.textContent = 'Now playing'; error.hidden = true; update(); });
+    audio.addEventListener('pause', () => { status.textContent = 'Paused'; update(); });
+    audio.addEventListener('waiting', () => { status.textContent = 'Loading audio…'; });
+    audio.addEventListener('ended', () => { status.textContent = 'Finished'; update(); });
+    audio.addEventListener('error', () => { status.textContent = 'Audio unavailable'; error.textContent = 'Audio could not load. Try the download link below.'; error.hidden = false; });
+    update();
+  });
+})();
+</script>
+
+</body>
+</html>
