@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The October 23 Edit</title>
+<meta name="description" content="The October 23 Edit: 25 stories on decision APIs, DNA models, open agent tooling, supply-chain attacks, power semiconductors, guardian robots, space and the business of AI."/>
+<style>html,body,#root{margin:0;min-height:100%}body{background:var(--ds-page)}*{box-sizing:border-box}.magazine{color:var(--ds-ink)}.dateline{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.09em;font-weight:600;border-top:6px solid var(--ds-ink);padding:16px 0 10px}.magazine>header{margin-bottom:16px}.index-bar{border-top:1px solid var(--ds-ink);border-bottom:1px solid var(--ds-ink);padding:8px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}.index-bar>span{font-size:12px;color:var(--ds-ink-2)}nav{display:flex;gap:8px;flex-wrap:wrap}.edition{scroll-margin-top:20px;padding-top:30px}.edition-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.06em;font-weight:600;padding-bottom:10px}.edition-kicker{color:var(--ds-teal);font-weight:600}.lead-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;margin:18px 0 24px}.lead-art{margin:0 0 20px}.lead-art img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}.lead-art figcaption{font-size:10px;color:var(--ds-ink-2);line-height:16px;padding-top:6px}.story-meta{display:flex;align-items:center;justify-content:space-between;gap:12px}.tag{color:var(--ds-teal);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}.story-no{font-size:11px;color:var(--ds-ink-2)}.story h3{font-size:22px;line-height:1.18;letter-spacing:-.025em;font-weight:600;margin:12px 0}.story-hero h3{font-size:31px;line-height:1.08}.dek{font-size:14px;line-height:23px;margin:12px 0 16px;color:var(--ds-ink-2)}.byline{font-size:10px;line-height:17px;color:var(--ds-ink-2);margin-top:14px}.lead-side{border-left:1px solid var(--ds-hairline);padding-left:24px;display:flex;flex-direction:column;gap:28px}.lead-side .story+.story{border-top:1px solid var(--ds-hairline);padding-top:24px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}.grid .story{border-top:2px solid var(--ds-ink);padding-top:16px}.grid .story h3{font-size:20px}.extra{margin-top:32px;border-top:6px solid var(--ds-ink)}.extra-grid{margin-top:20px}.story details{border-top:1px solid var(--ds-hairline);border-bottom:1px solid var(--ds-hairline)}.story summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600}.story summary::-webkit-details-marker{display:none}.story summary span{font-size:22px;font-weight:350}.story details[open] summary span{transform:rotate(45deg)}.reading{padding:0 0 16px}.reading p{font-size:15px;line-height:25px;margin:6px 0 20px}.source-label{font-size:10px;letter-spacing:.04em;color:var(--ds-ink-2);margin-bottom:8px}.source-links{display:flex;flex-wrap:wrap;gap:10px 20px;line-height:24px}.source-links a{font-size:13px;min-height:44px;display:inline-flex;align-items:center}.endnote{margin:40px 0 20px;padding:16px 0;border-top:2px solid var(--ds-ink);border-bottom:1px solid var(--ds-hairline);display:flex;justify-content:space-between;align-items:center;gap:12px}.endnote>span{font-size:10px;letter-spacing:.08em;font-weight:600}summary:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--ds-teal);outline-offset:4px}@media(max-width:767px){.index-bar{display:block}.index-bar>span{display:block;padding:6px 0}nav{margin-top:4px}.lead-layout{display:block}.lead-side{border-left:0;padding-left:0;border-top:2px solid var(--ds-ink);padding-top:20px;margin-top:28px;gap:24px}.grid{grid-template-columns:1fr;gap:24px}.story-hero h3{font-size:29px}.story h3,.grid .story h3{font-size:23px}.dateline{font-size:9px;letter-spacing:.035em}.edition{padding-top:24px}.endnote{display:block}.endnote>span{display:block;margin-bottom:8px}.lead-art img{aspect-ratio:3/2}.reading p{font-size:16px;line-height:26px}}@media(min-width:768px){.magazine>header h1{font-size:48px;line-height:1.1}.extra-grid .story:first-child{grid-column:span 2}.extra-grid .story:first-child h3{font-size:29px}}
+
+.reading .brief-lead{margin:6px 0 12px}.reading ul.brief{list-style:disc;margin:0 0 20px;padding-left:20px;font-size:15px;line-height:25px}.reading ul.brief li{margin:0 0 8px}@media(max-width:767px){.reading ul.brief{font-size:16px;line-height:26px}}
+
+
+.thumb{margin:14px 0 0}.thumb img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--ds-sand,#eee)}.thumb figcaption{font-size:10px;color:var(--ds-ink-2);line-height:16px;padding-top:6px}.thumb+h3{margin-top:12px}
+
+:root{color-scheme:light;--ds-page:#fff;--ds-ink:#251f21;--ds-ink-2:#585254;--ds-teal:#497f71;--ds-hairline:#eae9ea;--ds-panel:#f4efec;--ds-sand:#f4efec;--ds-image:#eef2f5}:root[data-theme=dark]{color-scheme:dark;--ds-page:#171819;--ds-ink:#f4efec;--ds-ink-2:#bdb8b6;--ds-teal:#91c9b6;--ds-hairline:#414345;--ds-panel:#252729;--ds-sand:#252729;--ds-image:#252729}body{font-family:Arial,Helvetica,sans-serif;line-height:1.6}.magazine{max-width:1040px;margin:0 auto;padding:36px}header h1{font-family:Georgia,serif;font-weight:400;font-size:48px;line-height:1.1;letter-spacing:-.025em;margin:16px 0}header p{color:var(--ds-ink-2);margin:0 0 22px}h2{font-family:Georgia,serif;font-weight:400;font-size:26px;margin:10px 0 0}.caption,footer{font-size:12px;color:var(--ds-ink-2)}a{color:inherit;text-underline-offset:3px}nav a,.endnote a{font-size:12px;min-height:44px;display:inline-flex;align-items:center;padding:0 8px}.listen{background:var(--ds-panel);border-radius:8px;padding:16px;margin:18px 0 24px}.listen label{display:block;font-size:13px;font-weight:600;margin-bottom:8px}audio{display:block;width:100%;height:44px}.lead-art img{aspect-ratio:16/9;object-fit:contain;background:var(--ds-image)}.thumb img{object-fit:contain;background:var(--ds-sand)}@media(max-width:767px){.magazine{padding:24px}header h1{font-size:36px}.dateline{flex-wrap:wrap}.listen{padding:12px}}
+
+.header-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.listen-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+</style>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("edit-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#stories">Skip to the stories</a>
+<main class="magazine">
+<div class="dateline"><span>23 OCTOBER 2026 · FRIDAY</span><span>25 STORIES · 1 EDITION</span></div>
+<header><div class="header-tools"><span>THE FRIDAY EDIT · DAILY SNAPSHOT</span><button aria-label="Switch to dark theme" aria-pressed="false" id="theme-toggle" type="button">Dark mode <span aria-hidden="true">◐</span></button></div>
+<h1>The October 23 Edit</h1><p>25 stories on decision APIs, DNA models, open agent tooling, supply-chain attacks, power semiconductors, guardian robots, space and the business of AI.</p></header>
+<div class="index-bar"><span>AI · Tools · Tech · Cyberpunk · Business</span><nav><a href="#listen">Listen</a><a href="../#archive">Archive</a></nav></div>
+<div class="listen listen-issue" id="listen"><div class="listen-heading"><span>LISTEN TO THE ISSUE</span><span>20:32 · SADACHBIA · 1×</span></div><div class="audio-part"><label for="daily-audio">Friday briefing</label><audio id="daily-audio" preload="metadata" src="1-edit-2026-10-23.mp3">Your browser cannot play this audio. <a href="1-edit-2026-10-23.mp3">Download the recording</a></audio><div class="audio-player" data-audio="daily-audio" data-title="the Friday briefing"><button aria-controls="daily-audio" aria-label="Play the Friday briefing" class="audio-play" type="button"><span aria-hidden="true" class="play-symbol">▶</span></button><div class="audio-track"><div class="audio-status">Ready to listen</div><input aria-label="Seek in the Friday briefing" aria-valuetext="0:00" class="audio-seek" max="100" min="0" step="0.1" type="range" value="0"/></div><span class="audio-time"><span class="elapsed">0:00</span> / <span class="duration">0:00</span></span></div><p class="audio-error" hidden role="status"></p><a class="audio-download" download href="1-edit-2026-10-23.mp3">Download audio ↓</a><noscript><p>Use the download link to listen. Interactive playback needs JavaScript.</p></noscript></div></div>
+<section class="edition" id="stories"><div class="edition-top"><span class="edition-kicker">THE ISSUE</span><span>25 stories</span></div><h2>DNA, on a laptop</h2>
+<figure class="lead-art"><img alt="Editorial illustration of a DNA strand above a laptop" loading="eager" src="2-hero23-carbonx.jpg"/><figcaption>Featured: Hugging Face&rsquo;s Carbon-X DNA model is small enough to run on a laptop (story 4). Image: <a href="https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/">Wired</a>.</figcaption></figure>
+<p class="caption">Friday, October 23, 2026 · A daily snapshot, not a live feed</p>
+<h2 class="category-heading" id="category-1">AI</h2>
+<article class="story" id="story-01"><div class="story-meta"><span class="tag">AI</span><span class="story-no">01</span><span class="read-time">1 min read</span></div>
+<h3>OpenAI turns small decisions into a general API</h3><p class="dek">The GPT-6 Luna-backed service answers bounded questions at agent speed.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>OpenAI is carving the tiny judgments inside agents into a product of their own.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> OpenAI made the Decisions API generally available on October 22 for questions with bounded answers.</li>
+<li><strong>Details:</strong> The API uses GPT-6 Luna, accepts text, images and native JSON, and can answer up to 400 questions per request. OpenAI says it can run up to 10 times faster than GPT-6 Luna through the Responses API.</li>
+<li><strong>Why it matters:</strong> The product is aimed at routing, scoring, risk checks and live voice agents. Box, Datadog, Ramp, Sierra and Speak supplied customer examples.</li>
+<li><strong>Caveat:</strong> The speed and cost figures are vendor and customer examples for narrow tasks. Decisions is not positioned as a replacement for open-ended reasoning.</li>
+</ul>
+<p class="source-label">2026-10-22 · OpenAI</p><div class="source-links"><a href="https://openai.com/index/decisions-api/" rel="noopener noreferrer" target="_blank">OpenAI</a>
+</div></div></details></article>
+<article class="story" id="story-02"><div class="story-meta"><span class="tag">AI</span><span class="story-no">02</span><span class="read-time">1 min read</span></div>
+<h3>Former OpenAI science lead launches Warp Sciences with $215 million</h3><p class="dek">Kevin Weil’s new lab wants robots and AI to close the loop in drug chemistry.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>A high-profile AI team is moving from software into the physical bottleneck of drug discovery.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Kevin Weil launched Warp Sciences with $215 million in funding. TechCrunch reports an $865 million valuation.</li>
+<li><strong>Details:</strong> The US chemistry CRO will combine expert chemists, AI and robotics to make and test molecules. The founding team also includes Sol Reisberg, DJ Patil and Mano Paluri.</li>
+<li><strong>Why it matters:</strong> Warp is betting that real experimental data, including failed reactions, is the missing input for better scientific AI. It also wants to reshore work often sent to overseas contractors.</li>
+<li><strong>Caveat:</strong> This is a launch and funding announcement, not evidence of faster approved drugs. Its first service is lead-optimization analog synthesis.</li>
+</ul>
+<p class="source-label">2026-10-22 · Business Wire</p><div class="source-links"><a href="https://www.businesswire.com/news/home/20261022200104/en/Warp-Sciences-Emerges-From-Stealth-With-%24215-Million-to-Build-U.S.-Chemistry-Services-for-Drug-Research" rel="noopener noreferrer" target="_blank">Business Wire</a>
+<a href="https://warp.xyz/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-03"><div class="story-meta"><span class="tag">AI</span><span class="story-no">03</span><span class="read-time">1 min read</span></div>
+<h3>Microsoft claims a benchmark win for medical diagnosis</h3><p class="dek">Its Diagnostic Orchestrator beat physicians on past cases, with hospital tests next.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Microsoft is putting numbers behind its medical superintelligence ambition, while keeping the clinical caveat in view.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Microsoft published results for MAI-DxO, an AI system that coordinates multiple agents through step-by-step diagnosis.</li>
+<li><strong>Details:</strong> On hundreds of New England Journal of Medicine case reports, Microsoft reports about 83 percent accuracy versus roughly 36 percent for physicians with references and 22 percent without. On emergency-department cases drawn from a Beth Israel Deaconess Medical Center database, it reports 80 percent versus 47 percent.</li>
+<li><strong>Why it matters:</strong> Microsoft compiled the cases into its SDBench benchmark, which it plans to open-source.</li>
+<li><strong>Caveat:</strong> The results come from historical cases and company-run evaluations. Microsoft says clinical validation is still needed and has not committed to a commercial launch date.</li>
+</ul>
+<p class="source-label">2026-10-22 · Microsoft AI</p><div class="source-links"><a href="https://microsoft.ai/news/building-medical-superintelligence/" rel="noopener noreferrer" target="_blank">Microsoft AI</a>
+<a href="https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-04"><div class="story-meta"><span class="tag">AI</span><span class="story-no">04</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="Illustration of a laptop scanning a DNA sequence" loading="lazy" src="2-hero23-carbonx.jpg"/><figcaption>Image: Jobanny Cabrera / Getty Images via Wired.</figcaption></figure>
+<h3>Hugging Face releases Carbon-X, an open model that chats with DNA</h3><p class="dek">The 14.8B-parameter model runs locally and answers in English about genetic sequences.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Hugging Face is turning genomic sequences into something researchers can interrogate conversationally.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Hugging Face released Carbon-X, an open 14.8B-parameter model trained jointly on DNA sequences and natural language.</li>
+<li><strong>Details:</strong> It uses a hybrid tokenizer for text and six-base-pair DNA tokens, has a 40,960-token context window, and can run on one GPU. The model averages 66.7 percent across five DNA benchmarks in the developers’ evaluation.</li>
+<li><strong>Why it matters:</strong> Researchers can ask whether mutations look benign or pathogenic and inspect small genome segments without sending sensitive data to a cloud model.</li>
+<li><strong>Caveat:</strong> The developers have not validated predictions in wet-lab experiments. The model handles roughly 50,000 base pairs at a time.</li>
+</ul>
+<p class="source-label">2026-10-22 · Hugging Face</p><div class="source-links"><a href="https://huggingface.co/HuggingFaceBio/Carbon-X" rel="noopener noreferrer" target="_blank">Hugging Face</a>
+<a href="https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-05"><div class="story-meta"><span class="tag">AI</span><span class="story-no">05</span><span class="read-time">1 min read</span></div>
+<h3>DeepSeek reportedly raises $15 billion after US restrictions</h3><p class="dek">Bloomberg says CATL and Tencent are among possible investors in the Chinese lab.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>DeepSeek’s capital position may be getting much stronger just as US government access closes.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Bloomberg reported that DeepSeek raised about $15 billion, or roughly 100 billion yuan, days after the US ordered civilian agencies to remove its technology.</li>
+<li><strong>Details:</strong> TechCrunch’s write-up names CATL and Tencent as potential investors and says the money would support infrastructure and open models for domestic and international markets.</li>
+<li><strong>Why it matters:</strong> The round would be one of China’s largest AI financings and would deepen competition among DeepSeek, Moonshot, Zhipu and MiniMax.</li>
+<li><strong>Caveat:</strong> This is a reported private financing. DeepSeek did not respond to TechCrunch’s request for comment, and terms could change or remain undisclosed.</li>
+</ul>
+<p class="source-label">2026-10-22 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-6">AI tools / open source</h2>
+<article class="story" id="story-06"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">06</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="OlmoEarth 1.3 pixelated globe wordmark" loading="lazy" src="3-olmoearth23.png"/><figcaption>Image: AI2.</figcaption></figure>
+<h3>OlmoEarth v1.3 turns the planet into reusable embeddings</h3><p class="dek">AI2 is releasing global 10-meter satellite embeddings and a browser map anyone can query.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>AI2 is making satellite analysis cheaper by computing the hard representation layer once and sharing it openly.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> AI2 released OlmoEarth v1.3, annual global embeddings at 10-meter resolution, and a browser-based Embeddings Explorer.</li>
+<li><strong>Details:</strong> The model reads Sentinel-1, Sentinel-2 and Landsat time series and produces 64- or 128-dimensional vectors for each land pixel. AI2 says the 128-dimensional embeddings lead on 20 of 27 evaluations.</li>
+<li><strong>Why it matters:</strong> The archive lets users test mapping ideas in seconds without a GPU. Weights, data and code are open, and AI2 estimates the final pre-training run cost about $2,720 in rented H100 time.</li>
+<li><strong>Caveat:</strong> The benchmark ranking is AI2’s own evaluation. Global annual embeddings launch for 2023 through 2025, while 2017 to 2022 coverage is still selective.</li>
+</ul>
+<p class="source-label">2026-10-22 · Hugging Face / AI2</p><div class="source-links"><a href="https://huggingface.co/blog/allenai/olmoearth-v1-3" rel="noopener noreferrer" target="_blank">Hugging Face / AI2</a>
+</div></div></details></article>
+<article class="story" id="story-07"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">07</span><span class="read-time">1 min read</span></div>
+<h3>IBM ships Granite Speech 5.0 for transcription and translation</h3><p class="dek">The Apache 2.0 models add stronger multilingual ASR, keyword biasing and speaker attribution.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>IBM’s open speech stack is getting more practical for real meetings and noisy audio.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> IBM released granite-speech-5.0-2b and updated its 470M Turbo CTC and 4.1 2B Plus speech models.</li>
+<li><strong>Details:</strong> The new 2B model supports transcription and translation across several major languages, language-ID prompting and up to 2,000 biased terms. IBM reports 5.06 percent average English WER on the Open ASR short-form benchmark.</li>
+<li><strong>Why it matters:</strong> The models ship under Apache 2.0 with Transformers, vLLM, llama.cpp and Apple Silicon support. Turbo CTC reaches 19,870 RTFx in IBM’s benchmark table.</li>
+<li><strong>Caveat:</strong> The benchmark results are IBM-reported and averaged over public test sets. Real-world accuracy will depend on microphones, accents, domain terms and overlap.</li>
+</ul>
+<p class="source-label">2026-10-21 · Hugging Face / IBM Granite</p><div class="source-links"><a href="https://huggingface.co/blog/ibm-granite/granite-speech-5" rel="noopener noreferrer" target="_blank">Hugging Face / IBM Granite</a>
+</div></div></details></article>
+<article class="story" id="story-08"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">08</span><span class="read-time">1 min read</span></div>
+<h3>Nvidia releases Nemotron 3.5 models for agent retrieval</h3><p class="dek">New open embed, rerank and parse models target evidence-heavy agent workflows.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Nvidia is treating retrieval quality as an agent-cost problem, not only a search-quality problem.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Nvidia expanded its Nemotron Retriever collection with open, commercially usable models for embedding, reranking and document extraction.</li>
+<li><strong>Details:</strong> The family includes 8B and 1B multimodal embedders, an 8B reranker and a Parse model. Nvidia says reranking cuts agent token cost by about 14 percent while improving retrieval accuracy.</li>
+<li><strong>Why it matters:</strong> The 8B embedder handles text and images across charts, tables and scanned documents, and Nvidia reports first place on the ViDoRe v3.1 dense retrieval leaderboard with 61.17 nDCG at 10.</li>
+<li><strong>Caveat:</strong> The leaderboard and token savings are vendor-reported. Production gains depend on the document mix, deployment stack and how often an agent has to search.</li>
+</ul>
+<p class="source-label">2026-10-21 · Hugging Face / NVIDIA</p><div class="source-links"><a href="https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval" rel="noopener noreferrer" target="_blank">Hugging Face / NVIDIA</a>
+</div></div></details></article>
+<article class="story" id="story-09"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">09</span><span class="read-time">1 min read</span></div>
+<h3>Google open-sources its Elephant-Goldfish coding workflow</h3><p class="dek">The plugin separates long-horizon design memory from stateless adversarial review.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Google’s answer to AI coding slop is to split the model’s memory from its critic.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Google open-sourced the Elephant-Goldfish Model plugin, originally built for internal software engineers.</li>
+<li><strong>Details:</strong> The Elephant is a long-running design session that keeps context and writes no code. Stateless Goldfish sessions then test the spec through comprehension checks, hostile review and a go/no-go readiness check.</li>
+<li><strong>Why it matters:</strong> The workflow tries to preserve architectural intent while using fresh sessions to catch ambiguity before implementation. Google says thousands of employees use the plugin, now in Antigravity with more environments planned.</li>
+<li><strong>Caveat:</strong> This is a process tool, not proof that generated code is correct. It still depends on a useful design document and human judgment.</li>
+</ul>
+<p class="source-label">2026-10-22 · Google Open Source Blog</p><div class="source-links"><a href="https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html" rel="noopener noreferrer" target="_blank">Google Open Source Blog</a>
+<a href="https://github.com/google/elephant-goldfish-model" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-10"><div class="story-meta"><span class="tag">AI tools / open source</span><span class="story-no">10</span><span class="read-time">1 min read</span></div>
+<h3>Microsoft turns database checks into training rewards for agents</h3><p class="dek">ThinkingBox-Training grades what an agent actually changed, then uses that signal for RL.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Microsoft is closing the gap between an agent saying it is done and the database agreeing.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Microsoft released ThinkingBox-Training on GitHub, extending its ThinkingBox agent-evaluation work into post-training.</li>
+<li><strong>Details:</strong> ThinkingBox-Bench has 507 tasks that compare the final database state with the expected outcome. Using executable checks as GRPO rewards, Qwen3.8-27B's average task success rose from 51.70 to 60.78 percent, and tasks completed correctly in all 20 attempts rose from 38 to 107.</li>
+<li><strong>Why it matters:</strong> A database diff is a verifiable 1-or-0 signal: it catches agents that declare victory early, and the same check doubles as a reward function without a learned judge.</li>
+<li><strong>Caveat:</strong> Results cover one model and one task family, and the training tasks share a format with the benchmark, which limits the transfer claim.</li>
+</ul>
+<p class="source-label">2026-10-22 · Hugging Face / Microsoft</p><div class="source-links"><a href="https://huggingface.co/blog/microsoft/thinkingbox-training" rel="noopener noreferrer" target="_blank">Hugging Face / Microsoft</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-11">Tech</h2>
+<article class="story" id="story-11"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">11</span><span class="read-time">1 min read</span></div>
+<h3>Microsoft says AI agents industrialized the ConnectWise breach fallout</h3><p class="dek">Storm-0940 used stolen app credentials and ARTEX to hit downstream Microsoft 365 tenants.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>The ConnectWise breach shows how agentic automation changes the tempo of supply-chain attacks.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Microsoft says China-aligned Storm-0940 used compromised ConnectWise cloud application credentials and the open-source ARTEX agent framework to authenticate into downstream customer environments.</li>
+<li><strong>Details:</strong> In one campaign subset, Microsoft recorded more than 2,250 tenants reached, 327 accounts across eight organizations, and peaks above 2,900 sign-in attempts per minute.</li>
+<li><strong>Why it matters:</strong> The attacker did not need interactive user sign-ins because abused applications already had trusted access. Microsoft warns that modified app credentials can persist as backdoors.</li>
+<li><strong>Caveat:</strong> Microsoft says tenant reach or successful authentication does not prove customer data was accessed or exfiltrated. ConnectWise paused the affected cloud backup service while investigating.</li>
+</ul>
+<p class="source-label">2026-10-21 · Microsoft Security</p><div class="source-links"><a href="https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/" rel="noopener noreferrer" target="_blank">Microsoft Security</a>
+<a href="https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-12"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">12</span><span class="read-time">1 min read</span></div>
+<h3>Hackers exploited PHP2Shell four days before disclosure</h3><p class="dek">AWS says attacks began before the critical PHP flaws became public, and exploitation is now broad.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>The PHP2Shell window between discovery and disclosure was not clean.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Amazon told the Financial Times and Ars Technica that it saw exploitation attempts four days before the PHP vulnerabilities were publicly disclosed.</li>
+<li><strong>Details:</strong> Wiz says two CVEs affect nearly every PHP release since 5.4 and can allow unauthenticated remote code execution or memory disclosure. PHP released patches on October 21.</li>
+<li><strong>Why it matters:</strong> PHP underpins WordPress, Drupal, Joomla, MediaWiki and a large share of the web. Wiz estimates the language powers about 70 percent of websites.</li>
+<li><strong>Caveat:</strong> Real exploitability varies by PHP version and configuration. Patching is the fix; mitigations from cloud and CDN providers are a fallback, not the end state.</li>
+</ul>
+<p class="source-label">2026-10-22 · Ars Technica</p><div class="source-links"><a href="https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/" rel="noopener noreferrer" target="_blank">Ars Technica</a>
+<a href="https://www.wiz.io/blog/php2shell-php-rce" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-13"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">13</span><span class="read-time">1 min read</span></div>
+<h3>Hijacked Tor exits intercepted SSH and plaintext email</h3><p class="dek">A researcher says 333 relays were pulled into a three-day interception campaign.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Tor’s encrypted web traffic kept moving, but SSH and email were steered into a trap.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Unknown attackers compromised a Tor management server and ultimately involved 333 exit relays in an interception campaign, according to a Tor volunteer report covered by Ars Technica.</li>
+<li><strong>Details:</strong> The relays redirected SSH connections through attacker-controlled servers and blocked encrypted email ports while allowing unencrypted alternatives. The attackers used the Ebury Linux backdoor.</li>
+<li><strong>Why it matters:</strong> Users who ignored SSH host-key warnings could have passwords stolen, sessions watched and servers infected. Email systems that downgraded to plaintext were exposed.</li>
+<li><strong>Caveat:</strong> Investigators still do not know how every server was compromised or who ran the campaign. Encrypted web traffic was not the reported target.</li>
+</ul>
+<p class="source-label">2026-10-22 · Ars Technica</p><div class="source-links"><a href="https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/" rel="noopener noreferrer" target="_blank">Ars Technica</a>
+</div></div></details></article>
+<article class="story" id="story-14"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">14</span><span class="read-time">1 min read</span></div>
+<h3>Washington lines up $389 million for power-semiconductor R&amp;D</h3><p class="dek">Four CHIPS Act awards target fusion power electronics, GaN and ultra-pure quartz.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>The next semiconductor fight is also about moving power cleanly into AI data centers and fusion systems.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The Commerce Department signed letters of intent for up to $389 million in CHIPS Act R&amp;D awards to Helion, Commonwealth Fusion Systems, Vertical Semiconductor and Sibelco.</li>
+<li><strong>Details:</strong> Helion would get up to $175 million, Commonwealth Fusion Systems $85 million, Vertical Semiconductor $73 million and Sibelco $56 million for work on pulsed power, plasma heating, gallium nitride and high-purity quartz.</li>
+<li><strong>Why it matters:</strong> Power conversion and materials are bottlenecks for grids, fusion and AI data centers, not just chip fabs.</li>
+<li><strong>Caveat:</strong> These are letters of intent and maximum award amounts, not completed final awards. The government would take a minority, non-controlling and non-voting equity stake in each company.</li>
+</ul>
+<p class="source-label">2026-10-22 · NIST</p><div class="source-links"><a href="https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd" rel="noopener noreferrer" target="_blank">NIST</a>
+</div></div></details></article>
+<article class="story" id="story-15"><div class="story-meta"><span class="tag">Tech</span><span class="story-no">15</span><span class="read-time">1 min read</span></div>
+<h3>Nvidia simulates a cheaper route to fault-tolerant quantum</h3><p class="dek">The 104-qubit JUPITER run points to 90 percent fewer physical qubits, on classical hardware only.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Nvidia is using GPUs to test quantum error-correction designs before the hardware exists.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Nvidia researchers simulated a 104-qubit fault-tolerant quantum system on the JUPITER supercomputer at Germany’s Jülich Supercomputing Centre.</li>
+<li><strong>Details:</strong> The run used 8,192 GPUs, cuQuantum and CUDA-Q to study magic state cultivation under realistic noise. Nvidia says the approach could cut physical qubit requirements by 90 percent.</li>
+<li><strong>Why it matters:</strong> Large classical simulations let researchers compare quantum processor designs before building expensive hardware.</li>
+<li><strong>Caveat:</strong> This was a simulation, not a demonstration on a real quantum processor. The 90 percent saving still needs experimental validation.</li>
+</ul>
+<p class="source-label">2026-10-22 · TechRadar</p><div class="source-links"><a href="https://www.techradar.com/pro/nvidia-breaches-new-quantum-computing-milestone-using-90-fewer-qubits-and-it-could-now-improve-drug-discovery-financial-modeling-and-more" rel="noopener noreferrer" target="_blank">TechRadar</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-16">Cyberpunk-space</h2>
+<article class="story" id="story-16"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">16</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="Unitree H2-X humanoid robot lifting a car in a staged demonstration" loading="lazy" src="4-unitree23.jpg"/><figcaption>Image: Unitree Robotics via CNBC TV18.</figcaption></figure>
+<h3>Unitree pitches a humanoid bodyguard in a staged promo</h3><p class="dek">The H2-X disarms an attacker and lifts a car on video, with autonomy still unproven.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>China’s humanoid marketing has moved from dance routines to security theater.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Unitree Robotics released a promotional video for the H2-X Kung Fu Legend Guardian, pitched for security, protection and rescue scenarios.</li>
+<li><strong>Details:</strong> The staged clip shows the robot blocking a knife attacker, pushing a pedestrian away from a car and lifting the front of a vehicle. Unitree claims roughly eight hours of maximum endurance, described on screen as standing time.</li>
+<li><strong>Why it matters:</strong> The company is trying to turn viral athletic robots into commercial machines as China’s robotics sector faces pressure to show revenue.</li>
+<li><strong>Caveat:</strong> The video does not establish autonomous threat recognition, safe behavior around people, pricing or a release date. Unitree warns users to keep two to three meters away.</li>
+</ul>
+<p class="source-label">2026-10-22 · South China Morning Post</p><div class="source-links"><a href="https://www.scmp.com/tech/tech-trends/article/3371683/chinese-firm-unveils-guardian-robot-can-disarm-attackers-lift-cars" rel="noopener noreferrer" target="_blank">South China Morning Post</a>
+<a href="https://www.cnbctv18.com/technology/part-kung-fu-legend-part-bodyguard-meet-unitrees-new-humanoid-robot-watch-20017054.htm" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-17"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">17</span><span class="read-time">1 min read</span></div>
+<h3>Seoul puts AI cameras and drones over Halloween crowds</h3><p class="dek">Fourteen nightlife districts enter a special safety period through November 1.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Seoul’s post-Itaewon crowd plan is becoming a real-time sensor network.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Seoul begins a Halloween safety operation on October 23 across 14 nightlife districts, running through November 1.</li>
+<li><strong>Details:</strong> The city will use 361 AI crowd cameras, drones over Hongdae, Seongsu-dong and Gangnam, and 3,271 officials, police, firefighters and safety stewards. Alerts trigger at five to six people per square meter.</li>
+<li><strong>Why it matters:</strong> The plan reflects the 2022 Itaewon crowd crush that killed 159 people, with street closures, one-way walking routes and emergency corridors added for peak nights.</li>
+<li><strong>Caveat:</strong> The system is a temporary safety deployment, not evidence that AI monitoring alone prevents crowd disasters. Human staffing and street design remain part of the plan.</li>
+</ul>
+<p class="source-label">2026-10-22 · The Korea Times</p><div class="source-links"><a href="https://www.koreatimes.co.kr/southkorea/society/20261022/ai-drones-guard-nightlife-districts-as-seoul-ramps-up-halloween-safety-measures" rel="noopener noreferrer" target="_blank">The Korea Times</a>
+</div></div></details></article>
+<article class="story" id="story-18"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">18</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="Illustration of the Nancy Grace Roman Space Telescope against a star field" loading="lazy" src="5-roman23.jpg"/><figcaption>Image: NASA.</figcaption></figure>
+<h3>NASA’s Roman telescope enters final commissioning</h3><p class="dek">The observatory is functional and beginning calibrated science test observations.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>NASA’s next wide-field survey machine is through its main checkout and tuning for science.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> NASA says the Nancy Grace Roman Space Telescope has entered science commissioning after completing observatory and instrument checkout.</li>
+<li><strong>Details:</strong> The team has verified guiding, exposures, data flow and slewing, including in crowded star fields and dusty regions. Test observations will calibrate light response and refine image quality.</li>
+<li><strong>Why it matters:</strong> Roman’s Wide Field Instrument is designed for large, fast surveys of dark matter, dark energy, exoplanets and galaxies. NASA says some systems are performing better than required.</li>
+<li><strong>Caveat:</strong> This is still commissioning, not the start of full science operations. The team is still characterizing performance before routine survey work.</li>
+</ul>
+<p class="source-label">2026-10-22 · NASA Science</p><div class="source-links"><a href="https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/" rel="noopener noreferrer" target="_blank">NASA Science</a>
+</div></div></details></article>
+<article class="story" id="story-19"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">19</span><span class="read-time">1 min read</span></div>
+<h3>NASA advisers warn of a coming gap in crewed LEO access</h3><p class="dek">The panel cites Crew Dragon retirement plans and uncertain commercial station progress.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>NASA’s safety advisers are worried about the bridge between the ISS and commercial stations.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> The Aerospace Safety Advisory Panel warned that NASA risks losing human access to low Earth orbit.</li>
+<li><strong>Details:</strong> SpaceNews reports that the concern combines SpaceX’s expected Crew Dragon retirement with uncertainty over commercial space station development and transportation.</li>
+<li><strong>Why it matters:</strong> Crew Dragon is the only operational US crew vehicle for the ISS, and NASA wants commercial stations to carry the post-ISS presence.</li>
+<li><strong>Caveat:</strong> This is a safety-panel warning about risk, not a confirmed loss of capability or a cancellation of any current crew mission.</li>
+</ul>
+<p class="source-label">2026-10-22 · SpaceNews</p><div class="source-links"><a href="https://spacenews.com/nasa-safety-advisers-warn-agency-risks-losing-crewed-access-to-leo/" rel="noopener noreferrer" target="_blank">SpaceNews</a>
+</div></div></details></article>
+<article class="story" id="story-20"><div class="story-meta"><span class="tag">Cyberpunk-space</span><span class="story-no">20</span><span class="read-time">1 min read</span></div>
+<h3>Ukraine partners with Iceye and Nokia on sovereign satellite communications</h3><p class="dek">A new letter of intent explores a network Kyiv could own and control.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Ukraine is trying to reduce a single point of failure in military satellite communications.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Iceye and Nokia are partnering with Ukraine's Ministry of Defence to develop a sovereign satellite communications capability the country could own and control.</li>
+<li><strong>Details:</strong> The announcement came during the Finnish prime minister’s visit to Ukraine. The companies are already working on secure LEO broadband systems for government customers.</li>
+<li><strong>Why it matters:</strong> SpaceNews reports that restrictions on SpaceX services have disrupted Ukrainian operations and sharpened concern about dependence on a US commercial provider.</li>
+<li><strong>Caveat:</strong> This is an exploration and development partnership, not a funded constellation purchase or an announced launch schedule.</li>
+</ul>
+<p class="source-label">2026-10-22 · Nokia</p><div class="source-links"><a href="https://www.nokia.com/newsroom/iceye-and-nokia-partner-with-the-ministry-of-defence-of-ukraine-to-develop-sovereign-satcom-capability/" rel="noopener noreferrer" target="_blank">Nokia</a>
+<a href="https://spacenews.com/ukraine-explores-its-own-satellite-network-after-spacex-disruptions/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<h2 class="category-heading" id="category-21">Business / other</h2>
+<article class="story" id="story-21"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">21</span><span class="read-time">1 min read</span></div>
+<h3>OpenAI targets a $1.25 trillion valuation as funding talks finalize</h3><p class="dek">The ChatGPT maker is seeking around $30 billion, with the discussed value down $150 billion from $1.4 trillion.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>OpenAI's next round is being negotiated at a scale that turns infrastructure into a financing problem.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Bloomberg reports OpenAI is targeting a $1.25 trillion valuation in the final stages of funding negotiations, seeking to raise around $30 billion.</li>
+<li><strong>Details:</strong> The value discussed in the talks shifted by $150 billion from $1.4 trillion, according to people involved, and the discussions are ongoing with details still subject to change.</li>
+<li><strong>Why it matters:</strong> A round of this size would show how model development, chip supply, cloud contracts and data-center construction are collapsing into one financing problem.</li>
+<li><strong>Caveat:</strong> These are reported negotiations described by anonymous sources, not a closed round or confirmed final terms. OpenAI has not announced the deal.</li>
+</ul>
+<p class="source-label">2026-10-22 · Bloomberg</p><div class="source-links"><a href="https://www.bloomberg.com/news/articles/2026-10-22/openai-shifts-value-to-1-25-trillion-as-funding-talks-finalize" rel="noopener noreferrer" target="_blank">Bloomberg</a>
+</div></div></details></article>
+<article class="story" id="story-22"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">22</span><span class="read-time">1 min read</span></div>
+<h3>Meta discloses $825 billion in future spending commitments</h3><p class="dek">A new filing puts a number on the leases and contracts behind the AI buildout, stretching to 2036.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Meta has now told investors how much of the future it has already signed for.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Meta said in a Thursday filing that it has agreed to spend about $825 billion in the future on leases and contracts, many tied to AI computing power and infrastructure.</li>
+<li><strong>Details:</strong> Operating and finance leases not yet on the balance sheet are valued at $355.7 billion, covering data centers and energy infrastructure starting this year through 2036.</li>
+<li><strong>Why it matters:</strong> The filing turns the AI capex story into a contractual obligation map: electricity and data-center capacity locked in years ahead.</li>
+<li><strong>Caveat:</strong> The $825 billion is a sum of future commitments over many years, not near-term cash spending, and contract value is not the same as money out the door.</li>
+</ul>
+<p class="source-label">2026-10-22 · Bloomberg</p><div class="source-links"><a href="https://www.bloomberg.com/news/articles/2026-10-22/meta-reports-825-billion-in-future-spending-commitments" rel="noopener noreferrer" target="_blank">Bloomberg</a>
+</div></div></details></article>
+<article class="story" id="story-23"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">23</span><span class="read-time">1 min read</span></div>
+<h3>Rivian buys world-model startup Third Dimension</h3><p class="dek">The UK team's AI turns real video into simulatable 3D worlds for driver assistance and robotaxis.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Rivian is buying a better simulator instead of building one.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Rivian acquired Third Dimension, a 15-person UK startup whose AI turns real-world images and video into lifelike 3D worlds.</li>
+<li><strong>Details:</strong> The team, founded in 2024 by Tolga Kart and Piotr Sokolski and backed by $7 million in seed funding, joins Rivian's autonomy and AI group under James Philbin and expands its London AI hub.</li>
+<li><strong>Why it matters:</strong> Rivian wants real scenarios it can re-simulate with moved cameras, shifted agents and new weather, to train driver-assistance and the robotaxi R2 it plans to supply to Uber in 2028.</li>
+<li><strong>Caveat:</strong> Deal terms were not disclosed, and better simulation does not by itself guarantee a safer or faster autonomy program.</li>
+</ul>
+<p class="source-label">2026-10-22 · TechCrunch</p><div class="source-links"><a href="https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/" rel="noopener noreferrer" target="_blank">TechCrunch</a>
+</div></div></details></article>
+<article class="story" id="story-24"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">24</span><span class="read-time">1 min read</span></div>
+<h3>Xona raises $250 million at a $2.45 billion valuation</h3><p class="dek">The Series D funds the shift from on-orbit proof to a commercial centimeter-level navigation service.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Xona's low-orbit Pulsar system is moving from demonstration to deployment.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Xona Space Systems announced a $250 million Series D at a $2.45 billion valuation, led by Steve Jurvetson's Future Ventures, bringing total capital raised past $570 million.</li>
+<li><strong>Details:</strong> Its Pulsar-0 satellite completed more than 500 transmissions and demonstrated positioning accuracy better than two centimeters. Six more Pulsar satellites launched this week, beginning commercial network deployment.</li>
+<li><strong>Why it matters:</strong> Xona says existing commercial receivers can use its signal without hardware changes, targeting drones, cars and robots that need precise, resilient location.</li>
+<li><strong>Caveat:</strong> This is a private funding announcement and early deployment, not proof of commercial service at scale.</li>
+</ul>
+<p class="source-label">2026-10-22 · Xona Space Systems</p><div class="source-links"><a href="https://www.xonaspace.com/news/series-d" rel="noopener noreferrer" target="_blank">Xona Space Systems</a>
+<a href="https://spacenews.com/navigation-startup-xona-raises-250-million-as-it-begins-satellite-deployment/" rel="noopener noreferrer" target="_blank">Supporting source</a>
+</div></div></details></article>
+<article class="story" id="story-25"><div class="story-meta"><span class="tag">Business / other</span><span class="story-no">25</span><span class="read-time">1 min read</span></div>
+<figure class="thumb"><img alt="UAD Alamedas Tower in Durango with its faceted glass facade" loading="lazy" src="6-uad23.jpg"/><figcaption>Photo: Recording Architecture, via dezeen.</figcaption></figure>
+<h3>A Gothic-inspired university tower rises over Durango</h3><p class="dek">Jonathan Corral Arquitectos wraps an eight-level campus building in a faceted glass facade.</p>
+<details><summary>Read the briefing <span aria-hidden="true">+</span></summary><div class="reading">
+<p class="brief-lead"><strong>Durango's newest landmark is a university building that treats stained glass as urban-scale structure.</strong></p><ul class="brief">
+<li><strong>What happened:</strong> Mexican studio Jonathan Corral Arquitectos completed the UAD Alamedas Tower for Universidad Durango Santander, overlooking the Las Alamedas promenade.</li>
+<li><strong>Details:</strong> The triangular-plan, 7,987-square-metre building holds eight levels plus a basement: classrooms, studios, three auditoriums, a cafeteria and a mock-trial courtroom. A faceted curtain wall with triangular panes draws on Gothic stained glass.</li>
+<li><strong>Why it matters:</strong> The design keeps the city inside the building: a full-height atrium frames the promenade, a stone staircase doubles as a plaza, and the structure is raised above grade for flood protection.</li>
+<li><strong>Caveat:</strong> This is a completed design project covered by an architecture publication, not an independent assessment of how the building performs.</li>
+</ul>
+<p class="source-label">2026-10-22 · dezeen</p><div class="source-links"><a href="https://www.dezeen.com/2026/10/22/jonathan-corral-arquitectos-uad-alamedas-durango/" rel="noopener noreferrer" target="_blank">dezeen</a>
+</div></div></details></article>
+<footer class="colophon"><div class="colophon-heading"><h2>Sources &amp; colophon</h2><span>23 OCTOBER 2026 · DAILY SNAPSHOT</span></div><p>25 stories, grouped by category. Research claims, reported deals, draft rules and vendor benchmarks are identified in each briefing.</p><ol class="source-index">
+<li><a href="https://openai.com/index/decisions-api/">OpenAI turns small decisions into a general API</a></li>
+<li><a href="https://www.businesswire.com/news/home/20261022200104/en/Warp-Sciences-Emerges-From-Stealth-With-%24215-Million-to-Build-U.S.-Chemistry-Services-for-Drug-Research">Former OpenAI science lead launches Warp Sciences with $215 million</a></li>
+<li><a href="https://microsoft.ai/news/building-medical-superintelligence/">Microsoft claims a benchmark win for medical diagnosis</a></li>
+<li><a href="https://huggingface.co/HuggingFaceBio/Carbon-X">Hugging Face releases Carbon-X, an open model that chats with DNA</a></li>
+<li><a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/">DeepSeek reportedly raises $15 billion after US restrictions</a></li>
+<li><a href="https://huggingface.co/blog/allenai/olmoearth-v1-3">OlmoEarth v1.3 turns the planet into reusable embeddings</a></li>
+<li><a href="https://huggingface.co/blog/ibm-granite/granite-speech-5">IBM ships Granite Speech 5.0 for transcription and translation</a></li>
+<li><a href="https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval">Nvidia releases Nemotron 3.5 models for agent retrieval</a></li>
+<li><a href="https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html">Google open-sources its Elephant-Goldfish coding workflow</a></li>
+<li><a href="https://huggingface.co/blog/microsoft/thinkingbox-training">Microsoft turns database checks into training rewards for agents</a></li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/">Microsoft says AI agents industrialized the ConnectWise breach fallout</a></li>
+<li><a href="https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/">Hackers exploited PHP2Shell four days before disclosure</a></li>
+<li><a href="https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/">Hijacked Tor exits intercepted SSH and plaintext email</a></li>
+<li><a href="https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd">Washington lines up $389 million for power-semiconductor R&amp;D</a></li>
+<li><a href="https://www.techradar.com/pro/nvidia-breaches-new-quantum-computing-milestone-using-90-fewer-qubits-and-it-could-now-improve-drug-discovery-financial-modeling-and-more">Nvidia simulates a cheaper route to fault-tolerant quantum</a></li>
+<li><a href="https://www.scmp.com/tech/tech-trends/article/3371683/chinese-firm-unveils-guardian-robot-can-disarm-attackers-lift-cars">Unitree pitches a humanoid bodyguard in a staged promo</a></li>
+<li><a href="https://www.koreatimes.co.kr/southkorea/society/20261022/ai-drones-guard-nightlife-districts-as-seoul-ramps-up-halloween-safety-measures">Seoul puts AI cameras and drones over Halloween crowds</a></li>
+<li><a href="https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/">NASA’s Roman telescope enters final commissioning</a></li>
+<li><a href="https://spacenews.com/nasa-safety-advisers-warn-agency-risks-losing-crewed-access-to-leo/">NASA advisers warn of a coming gap in crewed LEO access</a></li>
+<li><a href="https://www.nokia.com/newsroom/iceye-and-nokia-partner-with-the-ministry-of-defence-of-ukraine-to-develop-sovereign-satcom-capability/">Ukraine partners with Iceye and Nokia on sovereign satellite communications</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-22/openai-shifts-value-to-1-25-trillion-as-funding-talks-finalize">OpenAI targets a $1.25 trillion valuation as funding talks finalize</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-10-22/meta-reports-825-billion-in-future-spending-commitments">Meta discloses $825 billion in future spending commitments</a></li>
+<li><a href="https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/">Rivian buys world-model startup Third Dimension</a></li>
+<li><a href="https://www.xonaspace.com/news/series-d">Xona raises $250 million at a $2.45 billion valuation</a></li>
+<li><a href="https://www.dezeen.com/2026/10/22/jonathan-corral-arquitectos-uad-alamedas-durango/">A Gothic-inspired university tower rises over Durango</a></li>
+</ol><p>Intro/outro music: <a href="https://freemusicarchive.org/music/alex-morgan/cocktail-bar-lounge-jazz-vol-3/muted-trumpet-coffee-shop-warm-quick-set/">"Muted Trumpet Coffee Shop Warm Quick Set"</a> by Alex Morgan via Free Music Archive, CC BY 4.0, trimmed.</p></footer>
+</main>
+<script>(() => {
+  'use strict';
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const themeUI = () => {
+    const dark = root.dataset.theme === 'dark';
+    toggle.innerHTML = `${dark ? 'Light' : 'Dark'} mode <span aria-hidden="true">${dark ? '☀' : '◐'}</span>`;
+    toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
+    toggle.setAttribute('aria-pressed', String(dark));
+  };
+  themeUI();
+  toggle.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('edit-theme', root.dataset.theme); } catch (_) {}
+    themeUI();
+  });
+  const format = seconds => Number.isFinite(seconds) ? `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}` : '0:00';
+  document.querySelectorAll('.audio-player').forEach(player => {
+    const audio = document.getElementById(player.dataset.audio);
+    const button = player.querySelector('.audio-play');
+    const seek = player.querySelector('.audio-seek');
+    const error = player.nextElementSibling;
+    const title = player.dataset.title;
+    const status = player.querySelector('.audio-status');
+    const update = () => {
+      player.querySelector('.elapsed').textContent = format(audio.currentTime);
+      if (Number.isFinite(audio.duration)) {
+        player.querySelector('.duration').textContent = format(Math.round(audio.duration));
+        seek.max = audio.duration;
+        seek.value = audio.currentTime;
+        seek.style.setProperty('--progress', `${audio.currentTime / audio.duration * 100}%`);
+      }
+      seek.setAttribute('aria-valuetext', `${format(audio.currentTime)} of ${player.querySelector('.duration').textContent}`);
+      button.setAttribute('aria-label', `${audio.paused ? 'Play' : 'Pause'} ${title}`);
+      player.querySelector('.play-symbol').textContent = audio.paused ? '▶' : 'Ⅱ';
+    };
+    button.addEventListener('click', async () => {
+      if (!audio.paused) { audio.pause(); return; }
+      document.querySelectorAll('audio').forEach(other => { if (other !== audio) other.pause(); });
+      error.hidden = true;
+      status.textContent = 'Loading audio…';
+      try { await audio.play(); } catch (_) {
+        status.textContent = 'Playback unavailable';
+        error.textContent = 'Audio could not start. Try play again or download the recording below.';
+        error.hidden = false;
+        update();
+      }
+    });
+    seek.addEventListener('input', () => {
+      if (Number.isFinite(audio.duration)) { audio.currentTime = Number(seek.value); update(); }
+    });
+    ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked'].forEach(event => audio.addEventListener(event, update));
+    audio.addEventListener('playing', () => { status.textContent = 'Now playing'; error.hidden = true; update(); });
+    audio.addEventListener('pause', () => { status.textContent = 'Paused'; update(); });
+    audio.addEventListener('waiting', () => { status.textContent = 'Loading audio…'; });
+    audio.addEventListener('ended', () => { status.textContent = 'Finished'; update(); });
+    audio.addEventListener('error', () => { status.textContent = 'Audio unavailable'; error.textContent = 'Audio could not load. Try the download link below.'; error.hidden = false; });
+    update();
+  });
+})();
+</script>
+
+</body>
+  </html>
