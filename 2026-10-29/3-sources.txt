@@ -1,0 +1,81 @@
+# The October 29 Edit: 22 sources
+
+1. Particle emerges with a coding model that aims to think less expensively
+https://particle.ai/
+https://particle.ai/blog/introducing-particle-1
+
+2. DiffuSpace releases Clover, an open diffusion-language preview
+https://diffuspace.ai/
+https://diffuspace.ai/blog/clover-35b/
+https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
+
+3. Rime Prism puts a text checkpoint inside speech-to-speech
+https://www.rime.ai/
+https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise
+https://www.rime.ai/prism
+
+4. SenseNova Code2Video makes motion graphics through code
+https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
+https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video
+
+5. GitHub Agentic Workflows reaches general availability
+https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/
+
+6. Copilot Projects brings shared context and desktop actions
+https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases/
+
+7. Google previews Connected Apps across Search and Gemini
+https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/
+https://www.theverge.com/tech/1020644/google-will-let-more-developers-make-apps-that-plug-into-search-and-gemini
+
+8. FlashMap drafts a block of tokens in one pass
+https://jshen.net/flashmap/
+https://arxiv.org/html/2610.24365
+
+9. nanobot 0.4 adds durable conversation state
+https://github.com/HKUDS/nanobot/releases
+
+10. Supabase opens OrioleDB beta for update-heavy Postgres
+https://supabase.com/blog/orioledb-public-beta
+
+11. Altera announces Agilex 2X, with silicon still ahead
+https://www.altera.com/newsroom/agilex-2x
+
+12. CISA adds exploited VMware ESX and Linux flaws
+https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog
+
+13. Node2Shell moves from disclosure to exploitation reports
+https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/
+
+14. Artemis III hardware comes together at Kennedy
+https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/
+
+15. NASA and Google test a robot that fetches medical gear
+https://cloud.google.com/blog/topics/public-sector/google-cloud-and-nasa-testing-robotic-systems-for-deep-space-missions
+https://www.nextgov.com/emerging-tech/2026/10/nasa-google-test-ai-powered-medical-robot-deep-space-missions/416874/
+
+16. Vulcan targets a November 13 return
+https://arstechnica.com/space/2026/10/ulas-vulcan-rocket-is-set-to-return-to-flight-on-friday-the-13th/
+
+17. ESA orders four more Galileo second-generation satellites
+https://www.esa.int/Applications/Satellite_navigation/Galileo/ESA_procures_four_new_Galileo_Second_Generation_satellites
+
+18. Microsoft reports $92.3 billion in quarterly revenue
+https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/
+
+19. Alphabet's cloud growth meets a cash-hungry buildout
+https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm
+https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/
+
+20. Foundry Robotics raises $100 million for assembly as a service
+https://foundryrobotics.ai/
+https://www.businesswire.com/news/home/20261028508802/en/Foundry-Robotics-Raises-%24100-Million-Series-A-to-Build-Americas-First-Autonomous-Factory-for-Assembly
+
+21. Upwind raises $400 million for cloud and AI security
+https://www.upwind.io/feed/the-next-wave-is-here-upwinds-400m-series-c-to-build-the-cloud-ai-security-platform
+
+22. Global bond sales hit $6.61 trillion amid AI borrowing
+https://www.bloomberg.com/news/articles/2026-10-28/global-bond-sales-shatter-record-fueled-by-ai-borrowing-binge
+
+Intro/outro music: "Muted Trumpet Coffee Shop Warm Quick Set" by Alex Morgan via Free Music Archive, CC BY 4.0, trimmed.
+https://freemusicarchive.org/music/alex-morgan/cocktail-bar-lounge-jazz-vol-3/muted-trumpet-coffee-shop-warm-quick-set/
