@@ -1,0 +1,78 @@
+1. Joey-1 makes small decisions for a penny per million input tokens
+https://www.baseten.co/blog/decisions-for-a-penny-introducing-joey-1/
+https://www.baseten.co/library/joey-1/
+
+2. Dream emerges with $17 million for models that design buildings
+https://www.dreamhq.com/
+https://www.businesswire.com/news/home/20261029712156/en/Dream-Raises-%2417M-in-Seed-to-Teach-AI-How-to-Understand-and-Build-the-Physical-World
+
+3. &Truth leaves stealth to make software prove its claims
+https://andtruth.com/
+https://andtruth.com/press/andtruth-emerges-from-stealth/
+
+4. OpenAI rewrites its public behaviour blueprint around five values
+https://openai.com/index/updated-model-spec
+
+5. GitLab Orbit reaches GA as a shared context graph
+https://about.gitlab.com/blog/gitlab-orbit-ga/
+
+6. Copilot Fusion moves model selection into the runtime
+https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/
+
+7. Replica turns a design system into a prototyping constraint
+https://github.blog/changelog/2026-10-28-introducing-replica-an-open-source-ai-prototyping-tool/
+https://github.com/github/replica
+
+8. Google sets the clock on Jules
+https://jules.google/docs/changelog/2026-10-29/
+
+9. Deepgram is buying Daily, with Pipecat promised an independent foundation
+https://deepgram.com/blog/daily-pipecat-deepgram
+https://www.daily.co/blog/deepgram-is-acquiring-daily-and-establishing-an-independent-pipecat-foundation/
+
+10. Mintive raises $7 million for agent identities and governed access
+https://mintive.com/
+https://www.businesswire.com/news/home/20261029787855/en/Mintive-Tops-2.5-Million-Daily-Agent-Calls-as-Enterprises-Make-AI-Agent-Identity-a-Security-Priority
+
+11. Rival says GraphX squeezes DeepSeek onto eight L4 GPUs
+https://rival.io/
+https://rival.io/graph-x
+https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/rival.io-launches-graphx-running-deepseek-v4-flash-on-just-eight-1243443
+
+12. GM agrees to $220 million over drivers' data
+https://ag.ny.gov/press-release/2026/attorney-general-james-secures-220-million-general-motors-selling-drivers
+
+13. CISA adds exploited GitLab and Cisco firewall flaws
+https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog
+
+14. Hubble and Webb find a cat in Carina's dust
+https://esahubble.org/news/heic2614/
+
+15. TSIS-2 passes its environmental exams
+https://science.nasa.gov/blogs/tsis-2/2026/10/29/nasas-tsis-2-mission-aces-vacuum-vibration-testing/
+
+16. The station gains its seventh roll-out solar array
+https://www.nasa.gov/blogs/spacestation/2026/10/29/spacewalkers-install-roll-out-solar-arrays-for-power-generation/
+
+17. Telesat pushes global Lightspeed service to mid-2028
+https://spacenews.com/global-telesat-lightspeed-service-delayed-to-mid-2028/
+https://www.globenewswire.com/news-release/2026/10/29/3391128/0/en/telesat-reports-results-for-the-three-and-nine-months-ended-september-30-2026.html
+
+18. Cohere targets CAD$7 billion, with a staged Canadian investment
+https://www.prnewswire.com/news-releases/cohere-announces-series-e-fundraise-targeting-cad-7-billion-to-meet-surging-global-demand-for-secure-sovereign-ai-302923951.html
+https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai
+
+19. FuriosaAI closes $620 million for inference chips
+https://furiosa.ai/blog/furiosaai-620-million-series-d
+
+20. Amazon's cloud growth comes with a $42.4 billion cash outflow
+https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results
+
+21. Samsung's memory boom meets weaker device economics
+https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results
+
+22. Microsoft prices $25 billion of new debt
+https://news.microsoft.com/source/2026/10/29/microsoft-announces-debt-offerings-7/
+
+Intro/outro music: "Muted Trumpet Coffee Shop Warm Quick Set" by Alex Morgan via Free Music Archive, CC BY 4.0, trimmed.
+https://freemusicarchive.org/music/alex-morgan/cocktail-bar-lounge-jazz-vol-3/muted-trumpet-coffee-shop-warm-quick-set/
