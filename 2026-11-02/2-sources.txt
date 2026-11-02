@@ -1,0 +1,64 @@
+The November 2 Edit — sources
+
+1. Introducing GPT-6.1 Terra — OpenAI
+https://openai.com/index/introducing-gpt-6-1-terra/
+
+2. Introducing LongCat-2.5: Native Multimodality for Agentic Tasks
+https://longcat.ai/blog/longcat-2.5
+
+3. Moonshot AI Unveils Kimi K3.1 Pro for Advanced Coding and 3D Modeling
+https://www.thenextgentechinsider.com/pulse/moonshot-ai-unveils-kimi-k31-pro-for-advanced-coding-and-3d-modeling
+
+4. MiniMax M3.1 Flash quantized builds, now on more of your hardware
+https://fav0.com/en/2026-11-02/
+
+5. DeepSeek V4.1F-1017 ties GPT 5.5 on the Epoch Capabilities Index
+https://fav0.com/en/2026-11-02/
+
+6. Introducing Avartha: The Real-Time AI Agent Factory (Ava Zero)
+https://avartha.ai/blog/introducing-avartha/
+
+7. HeyPuter/everything: rebuilding and open-sourcing the world's software from scratch
+https://github.com/HeyPuter/everything
+
+8. Impeccable: the design linter that blocks cliches before shipping (GitHub Weekly Vol.4)
+https://himiao.ai/en/news/2026-11-02-github-weekly-4
+
+9. claude-mem: cross-session agent memory as a searchable local service (GitHub Weekly Vol.4)
+https://himiao.ai/en/news/2026-11-02-github-weekly-4
+
+10. SolidCraft: parametric CAD in pure Rust (GitHub Weekly Vol.4)
+https://himiao.ai/en/news/2026-11-02-github-weekly-4
+
+11. Concat: scriptable, local video editing (GitHub Weekly Vol.4)
+https://himiao.ai/en/news/2026-11-02-github-weekly-4
+
+12. Ivanti Connect Secure: two more exploited zero-days added to the October chain (SANS Stormcast)
+https://isc.sans.edu/podcastdetail/10160
+
+13. Code-execution flaw in UEFI firmware threatens most servers on planet Earth
+https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/
+
+14. Lenovo's "encrypted" fingerprint USB drive is just an unencrypted SD card
+https://www.tomshardware.com/tech-industry/cyber-security/lenovo-fingerprint-usb-stick-sold-as-aes-256-encrypted-had-a-plain-sd-card-inside-ai-assisted-follow-up-finds-a-backdoor-and-hardcoded-keys-in-other-secure-usb-products
+
+15. Cursor security notice: malicious Anthropic.claude-code 2.1.312 and 2.1.313 in the Cursor marketplace
+https://cursor.com/blog/claude-code-extension-security-notice
+
+16. SpaceX completes first suborbital Starlink deployment during thirteenth Starship test
+https://cnnbc.com/spacex-completes-first-suborbital-starlink-satellite-deployment-during-thirteenth-starship-test
+
+17. Analysts find looming launch crisis is "more severe" than anticipated
+https://arstechnica.com/space/2026/10/analysts-find-looming-launch-crisis-is-more-severe-than-anticipated/
+
+18. SMS of Death: the proof of concept and the patch window
+https://smsofdeath.com
+
+19. Re:Build Manufacturing raises $2.1B (top-10 weekly funding roundup)
+https://thenextmarketers.com/top-10-funding-rounds-this-week-led-by-physical-ai-and-predictions/
+
+20. Kalshi raises $1B (top-10 weekly funding roundup)
+https://thenextmarketers.com/top-10-funding-rounds-this-week-led-by-physical-ai-and-predictions/
+
+21. The Weekly Notable Startup Funding Report: 11/2/26 (Avante AI, Broccoli)
+https://www.alleywatch.com/2026/11/the-weekly-notable-startup-funding-report-11-2-26/
