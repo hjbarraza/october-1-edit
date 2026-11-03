@@ -1,0 +1,26 @@
+The November 3 Edit — sources (Tuesday, 3 November 2026)
+
+1. Flower Labs claims the frontier with Endeavor 1.1 — https://flower.ai/blog/2026-11-03-introducing-endeavor-1.1
+2. NYT and Tribune papers sue Brave over scraping — https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/
+3. OpenAI's LifeVal grades assistants on real errands — https://openai.com/index/lifeval/
+4. OpenAI wants its campuses to flex for the grid — https://openai.com/index/grid-protectors-program
+5. InclusionAI's Ming-3.0 hears more than speech — https://www.thenextgentechinsider.com/pulse/inclusionai-launches-ming-30-audio-flash-native-audio-language-moe-model
+6. Anthropic's amended S-1 shows a $17 billion quarter — https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html
+7. Runway Dev plugs into Claude Code, Codex and Cursor — https://runway.com/news/developers/runway-dev-plugins-for-coding-agents
+8. agent-desktop swaps screenshots for the accessibility tree — https://crazycoderslab.com/agent-desktop-vercel-labs-ai-agents-computer-use-accessibility-tree-rust-cli-github-2026/ | https://github.com/vercel-labs/agent-desktop
+9. DeepSeek's dsh-superagent watches your repo — https://gigazine.net/gsc_news/en/20261102-deepseek-dsh-superagent/ | https://github.com/deepseek-ai/dsh-superagent-prototype/
+10. GenOffice makes real Office files with your agent — https://github.com/genspark-ai/genoffice
+11. GitHub's trending list now belongs to agent skills — https://dev.to/4sapi/github-weekly-agent-skills-sweep-top-3-de-ai-design-leads-4n91
+12. FBI: North Korea took $6.43 billion from Binance — https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html
+13. Barracuda patches two flaws that chain to root — https://isc.sans.edu/podcastdetail/8511 | https://trust.barracuda.com/security/pre-authentication-authorization-bypass-command-injection
+14. Synology: ransomware is hitting dusty NAS boxes — https://www.synology.com/en-global/company/news/article/C3RB3R/Synology%20urges%20users%20to%20update%20DSM%20following%20ransomware%20attacks%20on%20outdated%20DSM%20versions | https://isc.sans.edu/podcastdetail/8511
+15. Starship makes orbit, then comes home early — https://www.krgv.com/videos/spacex-s-supersized-starship-launches-into-orbit-for-the-first-time-but-flight-ending-early/
+16. Electron's 99th flight keeps iQPS perfect — https://investors.rocketlabcorp.com/news-releases/news-release-details/mission-success-rocket-lab-launches-99th-electron-mission
+17. Eight launches crowd the week — https://www.nasaspaceflight.com/2026/11/launch-preview-110226/
+18. DeepSeek's reported $15.8 billion raise — https://www.theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players | https://www.veryfrontier.com/news/deepseek-15-8b-funding-chinese-investors
+19. Northwood banks $375 million for satellite ground links — https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/
+20. Trajectory wants models that keep learning — https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/
+21. The week's quieter rounds — https://traded.co/vc/newsletter/deepseek-raises-15-8b-cohere-raises-5b-formation-bio-raises-600m/
+
+Audio: assembled from narration rendered in the Sadachbia voice at 1x.
+Intro and closing sting: Alex Morgan, Free Music Archive, CC BY 4.0.
