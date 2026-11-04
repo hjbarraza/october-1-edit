@@ -1,0 +1,23 @@
+The Edit — Wednesday, November 4, 2026 — 21 sources
+
+1. OpenAI — Accelerating engineering for the physical world: https://openai.com/index/accelerating-engineering-for-the-physical-world
+2. TechCrunch — 42AI comes out of stealth with $62.5M and a world model that can 'predict human behavior': https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/
+3. GDPx (SemiAnalysis) — The General Agentic Benchmark leaderboard: https://gdpx.semianalysis.com/
+4. Momentic — QA Bench: https://momentic.ai/qa-bench
+5. The National — Abu Dhabi agrees OpenAI deals to transform government services and education: https://www.thenationalnews.com/news/uae/2026/11/02/abu-dhabi-agrees-openai-deals-to-boost-government-services-and-education/
+6. GitHub — karpathy/nanochat: https://github.com/karpathy/nanochat
+7. GitHub — ifixai-ai/iFixAi: https://github.com/ifixai-ai/iFixAi
+8. GitHub — beenuar/AiSOC: https://github.com/beenuar/AiSOC
+9. GitHub — cheaper-inference/OmniRoute: https://github.com/cheaper-inference/OmniRoute
+10. SecurityWeek — Critical Node-RED Flaw Exploited in Attacks: https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/
+11. BleepingComputer — Hackers hijack cPGuard autoupdate to deploy backdoor, steal data: https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/
+12. Oracle — Oracle Brings Google TPUs to Oracle Cloud Infrastructure (Oct 27): https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/ + RCRTech analysis (Nov 3): https://rcrtech.com/semiconductor-news/google-tpus-outside-google-cloud/
+13. BleepingComputer — WorkOS says attacker used ARTEX AI to breach internal sales app: https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/ + The Hacker News — Chainstack reports production systems breach: https://thehackernews.com/2026/11/chainstack-reports-production-systems.html
+14. NASA — NASA-Funded SSPICY Mission Experiences Communications Loss: https://www.nasa.gov/blogs/smallsatellites/2026/11/03/nasa-funded-sspicy-mission-experiences-communications-loss/
+15. Ars Technica — China publicly discloses plan for a lunar landing within three years: https://arstechnica.com/space/2026/11/china-releases-timeline-for-lunar-landing-on-the-moon-targeting-before-2030/
+16. SatNews — NASA Outlines Artemis IV Starship Refueling Architecture as Launch Estimates Vary: https://satnews.com/2026/11/03/nasa-graphic-outlines-artemis-iv-starship-refueling-architecture-as-launch-estimates-vary/
+17. Launch Library 2 — Kinetica 2 | SpaceSail Polar Group #17, Nov 3, Launch Successful (second Kinetica 2 flight; first was the March 30 demo): https://ll.thespacedevs.com/2.2.0/launch/f3f201cd-0ff9-4ff7-9aaa-1d22c399c75a/
+18. Business Wire — Traversal Raises $120M with a $1 Billion Valuation: https://www.businesswire.com/news/home/20261103122345/en/Traversal-Raises-%24120M-with-a-%241-Billion-Valuation-to-Keep-Code-Running-With-a-Superintelligent-AI-Site-Reliability-Engineer
+19. fal.ai — Series E & F announcement: https://fal.ai/blog/series-e-f + TechCrunch (Bloomberg figures): https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/
+20. Apple — Apple reports fourth quarter results: https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/
+21. designboom radar — exhibitions to see around the world this november: https://www.designboom.com/art/exhibition-radar-november-2026/
